@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'patcher'))
 from sacred_gold_patcher import concatenate, find_xdelta, fingerprint, run_tool, verify
 
-VERSION = 'alpha4s'
+VERSION = 'alpha4x'
 ANVIL_COMMIT = '89e6cfe11420dd8823d0ecfb7885f3a528ad18f1'
 INPUTS = {
     'heartgold': dict(size=134217728, sha256='65f02a56842b75aa92d775d56d657a56fe3fa993550b04dc20704ab82d760105'),
@@ -23,7 +23,7 @@ INPUTS = {
     'sacred_gold': dict(size=131037664, sha256='49f29848878406990ea288f26872d4355c92c4a2677f56973750bbf2566c13c1'),
     'reforged': dict(size=268435456, sha256='17afd998421183ab1421c0419bf9a6d545c034dc6c9ee3fa62779d8aa342ca77'),
 }
-OUTPUT = dict(size=268435456, sha256='627ec717edd9dc40d1bdf8088c7470de435c6f63fc933e43d403396220b74917')
+OUTPUT = dict(size=268435456, sha256='952f1756540d8e0acde90f2a6f7424b94a94780554bb57c22ab656b9b017bda2')
 
 
 def anvil_hashes(root):
@@ -44,7 +44,7 @@ def package(args):
     xdelta = find_xdelta(args.xdelta3)
     verify(args.sacred_gold, INPUTS['sacred_gold'], 'Sacred Gold Complete 1.05')
     verify(args.reforged, INPUTS['reforged'], 'Pinned Reforged donor')
-    verify(args.target, OUTPUT, 'Released Sacred Gold Alpha 4s')
+    verify(args.target, OUTPUT, f'Released Sacred Gold {VERSION}')
     hashes = anvil_hashes(args.anvil_source)
     out.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='.sg-package-', dir=out.parent) as folder:
@@ -85,10 +85,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--sacred-gold', type=Path, default=ROOT / 'local/sacred-gold/SacredGold-Complete-1.05.nds')
     parser.add_argument('--reforged', type=Path, default=ROOT / 'output/Platinum-Reforged-baseline.nds')
-    parser.add_argument('--target', type=Path, default=ROOT / 'output/SacredGold-Reforged-alpha4s.nds')
+    parser.add_argument('--target', type=Path, default=ROOT / f'output/SacredGold-Reforged-{VERSION}.nds')
     parser.add_argument('--anvil-source', type=Path, default=ROOT / 'platinum-reforged-anvil')
     parser.add_argument('--xdelta3', type=Path, default=ROOT / 'local/tools/xdelta-build/xdelta3')
-    parser.add_argument('--out', type=Path, default=ROOT / 'output/patcher/SacredGold-Reforged-alpha4s-installer-v1')
+    parser.add_argument('--out', type=Path, default=ROOT / f'output/patcher/SacredGold-Reforged-{VERSION}-installer-v1')
     package(parser.parse_args())
 
 

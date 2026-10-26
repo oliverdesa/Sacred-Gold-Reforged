@@ -23,8 +23,8 @@ LABELS = {'heartgold': 'HeartGold · USA Rev 0', 'platinum': 'Platinum · USA Re
           'bundle': 'reforged.bundle · original Anvil alpha', 'sacred_gold': 'Sacred Gold · Complete 1.05',
           'reforged': 'Platinum Reforged · original Anvil alpha'}
 PATCHES = {
-    'clean': dict(size=4988259, sha256='60a70b7fb6e12ab204fe7a4067c059d245067c4152f7dadb54a544a578c3074b'),
-    'prepared': dict(size=1681881, sha256='927e3a2a57b10d525623725738162b406ec63ac27279448c8eca709461095cd7'),
+    'clean': dict(size=4988319, sha256='8d32cb885cf832d7d5e353838d162cb31d8751324e638ab7d1c0e9a9dc55f42d'),
+    'prepared': dict(size=1681956, sha256='a6d10d8b01ec5a3b48430bb6c1276df8370ec076d0129d6be4e49bfb66f5768d'),
 }
 SITE_MEDIA = {'chuck-gym-preview.mp4', 'chuck-gym-poster.webp', 'hooh-gen5.gif',
               'lugia-gen5.gif', 'hooh-still.png', 'lugia-still.png'}
@@ -158,7 +158,7 @@ def encode_clean_patch(paths, target, output, xdelta):
         raise FileExistsError(output)
     for key in CLEAN_ORDER:
         verify(paths[key], INPUTS[key], LABELS[key])
-    verify(target, OUTPUT, 'Sacred Gold Alpha 4s target')
+    verify(target, OUTPUT, f'Sacred Gold {VERSION} target')
     executable = find_xdelta(xdelta)
     version = subprocess.check_output([executable, '-V'], stderr=subprocess.STDOUT, text=True)
     if 'version 3.2.2,' not in version:
@@ -179,13 +179,13 @@ def encode_clean_patch(paths, target, output, xdelta):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--clean-patch', type=Path, default=ROOT / 'output/patcher/browser-research/SacredGold-alpha4s-clean.xdelta')
+    parser.add_argument('--clean-patch', type=Path, default=ROOT / f'output/patcher/browser-research/SacredGold-{VERSION}-clean.xdelta')
     parser.add_argument('--prepared-patch', type=Path,
-        default=ROOT / 'output/patcher/SacredGold-Reforged-alpha4s-installer-v1/SacredGold-Reforged-alpha4s.xdelta')
-    parser.add_argument('--out', type=Path, default=ROOT / 'output/patcher/SacredGold-Reforged-alpha4s-web-v2')
+        default=ROOT / f'output/patcher/SacredGold-Reforged-{VERSION}-installer-v1/SacredGold-Reforged-{VERSION}.xdelta')
+    parser.add_argument('--out', type=Path, default=ROOT / f'output/patcher/SacredGold-Reforged-{VERSION}-web-v1')
     parser.add_argument('--encode-clean', action='store_true', help='regenerate the clean delta from pinned local inputs first')
     parser.add_argument('--xdelta3', type=Path, default=ROOT / 'local/tools/xdelta-build/xdelta3')
-    parser.add_argument('--target', type=Path, default=ROOT / 'output/SacredGold-Reforged-alpha4s.nds')
+    parser.add_argument('--target', type=Path, default=ROOT / f'output/SacredGold-Reforged-{VERSION}.nds')
     defaults = {
         'heartgold': ROOT / 'games/Pokemon HeartGold Version (USA).nds',
         'platinum': ROOT / 'games/Pokemon-Platinum-ROM-en.nds',

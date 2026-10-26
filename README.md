@@ -35,7 +35,7 @@ the entire 256 MiB output. Cancellation disposes the worker; no upload API exist
 Obtain the two project deltas from an approved release, then run:
 
 ```sh
-python3 tools/package_sacred_gold_web.py --clean-patch release-inputs/SacredGold-alpha4s-clean.xdelta --prepared-patch release-inputs/SacredGold-Reforged-alpha4s.xdelta --out dist
+python3 tools/package_sacred_gold_web.py --clean-patch release-inputs/SacredGold-alpha4x-clean.xdelta --prepared-patch release-inputs/SacredGold-Reforged-alpha4x.xdelta --out dist
 ```
 
 Both deltas must match the checksums pinned in the source. The generated dist/

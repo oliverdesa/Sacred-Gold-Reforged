@@ -5,8 +5,8 @@ Sacred Gold by **Drayano**; Gen V engine integration based on **Platinum Reforge
 RomPatcher.js**, with checksums from **Chen, Yi-Cyuan's js-sha256**. See CREDITS.txt
 in the site package, or CREDITS.md in the source directory, for full attribution.
 
-This is a browser installer for the existing Alpha 4s testing ROM. It does not
-change game balance, repair additional gameplay bugs, or open the Frontier early.
+This browser installer builds Alpha 4x, including the melonDS battle-entry and
+sound-cleanup guards and fast egg hatching. Frontier access still requires Jasmine.
 
 ## Use the patcher
 
@@ -95,7 +95,7 @@ form so stale file selections and old worker messages cannot be reused.
 ## Result and reports
 
 The output is 268435456 bytes, SHA-256:
-627ec717edd9dc40d1bdf8088c7470de435c6f63fc933e43d403396220b74917
+952f1756540d8e0acde90f2a6f7424b94a94780554bb57c22ab656b9b017bda2
 
 Back up your ordinary in-game save before changing ROM versions. Avoid carrying
 emulator savestates across versions. The patcher does not access your emulator
@@ -121,3 +121,6 @@ in release assets. Do not publish the entire game-development workspace.
 This is a local prototype. Review upstream runtime/art redistribution terms
 before publishing a game-bearing site or release. CREDITS.txt preserves the
 distinction between open-source tools and the original games/other authors' work.
+
+Alpha 4x also fixes the low-HP music preference crash found in melonDS doubles testing.
+Factory streak and weather testing remains in progress; see KNOWN_ISSUES for scope.

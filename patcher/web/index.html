@@ -39,13 +39,26 @@
       <div class="section-title"><h2 id="build-title">Build your game</h2><span class="caption">No installation needed</span></div>
       <fieldset class="methods" id="methods">
         <legend>Choose your starting files</legend>
-        <label><input type="radio" name="mode" value="clean" checked> Clean ROMs</label>
-        <label><input type="radio" name="mode" value="prepared"> Prepared ROMs</label>
+        <label><input type="radio" name="mode" value="clean" checked> Original games (recommended)</label>
+        <label><input type="radio" name="mode" value="prepared"> Already patched games (advanced)</label>
       </fieldset>
       <p id="method-help" class="help"></p>
+      <div id="clean-guide" class="help">
+        <p><strong>First, get these two small patch files.</strong> Download them, then select them below along with your three game ROMs. You do not need to apply the patches or install Anvil first.</p>
+        <ol>
+          <li><a href="https://drive.google.com/drive/folders/0B-zmEVN0Mas6VlhJNHc0YWx3UUk?resourcekey=0-RYApzpdEIcGIkiTfKxyKqw" target="_blank" rel="noopener noreferrer">Drayano’s Sacred Gold downloads</a>: use Complete 1.05 and select <strong>SacredGold105.xdelta</strong> from <strong>SGSS_xDeltaPatches</strong>. Do not use Storm Silver, Classic or an optional addon.</li>
+          <li><a href="https://github.com/smoldice/platinum-reforged-anvil/releases/download/v0.1.0-alpha/reforged.bundle" target="_blank" rel="noopener noreferrer">Download the original Anvil engine file</a>: save <strong>reforged.bundle</strong> (about 616 KB). This is one data file, not an app you need to run. <a href="https://github.com/smoldice/platinum-reforged-anvil/releases/tag/v0.1.0-alpha" target="_blank" rel="noopener noreferrer">Original release &amp; credits</a>.</li>
+        </ol>
+        <p>The original Anvil release is now named <strong>0.1.0-alpha</strong>; older instructions called it 1.0.0-alpha. The linked engine file is checksum-verified. Its current online builder and newer Reforged releases are not substitutes.</p>
+      </div>
+      <details id="prepared-guide" class="help" hidden>
+        <summary>Which patched games work?</summary>
+        <p>You need <strong>Sacred Gold Complete 1.05</strong> and <strong>Platinum Reforged 0.1.0-alpha</strong>, built from the exact original game revisions listed below. These are the two upstream games, not a save or your current Sacred Gold Reforged ROM.</p>
+        <p>The <a href="https://github.com/smoldice/platinum-reforged-anvil/releases/tag/v0.1.0-alpha" target="_blank" rel="noopener noreferrer">original Anvil release</a> has the older Windows/Linux builders. Its “in your browser” link now opens a newer builder: do not use that to make this donor. Reforged 0.2 and 0.3 are not accepted. If you do not already have the two correct games, choose <strong>Original games</strong> instead; it avoids building them separately.</p>
+      </details>
       <div id="files"></div>
-      <details class="input-details"><summary>Input details &amp; official sources</summary><div id="input-details"></div>
-        <p>Obtain the official <a href="https://gbatemp.net/threads/pokemon-sacred-gold-storm-silver.327567/" target="_blank" rel="noopener noreferrer">Sacred Gold Complete 1.05 patch from Drayano</a> and <a href="https://github.com/smoldice/platinum-reforged-anvil/releases/tag/v1.0.0-alpha" target="_blank" rel="noopener noreferrer">original Anvil bundle from smoldice</a>. Use your own cartridge dumps. Redux and Renegade Platinum patches are not needed.</p>
+      <details class="input-details"><summary>Exact versions, checksums &amp; official sources</summary><div id="input-details"></div>
+        <p>Obtain the official <a href="https://gbatemp.net/threads/pokemon-sacred-gold-storm-silver.327567/" target="_blank" rel="noopener noreferrer">Sacred Gold Complete 1.05 patch from Drayano</a> and <a href="https://github.com/smoldice/platinum-reforged-anvil/releases/tag/v0.1.0-alpha" target="_blank" rel="noopener noreferrer">original Anvil bundle from smoldice</a>. Use your own cartridge dumps. Redux and Renegade Platinum patches are not needed.</p>
       </details>
       <div class="build-actions"><button id="build" type="button" disabled>Build Sacred Gold</button><button id="cancel" class="secondary" type="button" hidden>Cancel</button></div>
       <div class="result" id="result" aria-live="polite" aria-atomic="true"><p id="status">Choose your files to begin.</p></div>

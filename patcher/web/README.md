@@ -30,7 +30,11 @@ Select:
 2. Pokemon Platinum, USA revision 0, 134217728 bytes.
 3. Pokemon Black Version 2, USA/Europe revision 0, 536870912 bytes.
 4. Drayano's modern SacredGold105.xdelta, Complete 1.05, 15023442 bytes.
-5. smoldice's original Anvil alpha reforged.bundle, 630876 bytes.
+5. smoldice's original Anvil 0.1.0-alpha reforged.bundle, 630876 bytes.
+
+There is no Anvil installation or separate donor-building step in this method.
+Select the three unmodified games plus the two downloaded patch files; the
+patcher handles assembly. The form groups these into games and patch files.
 
 The release.json file and the page's Input details section give the exact SHA-256
 checksums. Different revisions, trimmed dumps, optional patches, Storm Silver,
@@ -41,7 +45,14 @@ Official sources:
 
 - Drayano / Sacred Gold: https://gbatemp.net/threads/pokemon-sacred-gold-storm-silver.327567/
 - Drayano's HGSS downloads: https://drive.google.com/drive/folders/0B-zmEVN0Mas6VlhJNHc0YWx3UUk?resourcekey=0-RYApzpdEIcGIkiTfKxyKqw
-- smoldice / original Anvil bundle: https://github.com/smoldice/platinum-reforged-anvil/releases/tag/v1.0.0-alpha
+- smoldice / original Anvil release: https://github.com/smoldice/platinum-reforged-anvil/releases/tag/v0.1.0-alpha
+- Direct engine file: https://github.com/smoldice/platinum-reforged-anvil/releases/download/v0.1.0-alpha/reforged.bundle
+
+The original tag was renamed from v1.0.0-alpha to v0.1.0-alpha. The bundle on
+that release still matches SHA-256
+c4b271c5e20a17ff5ce5ff252686fddf099939fbddac999cf07fd0ad2b159313.
+This was checked against GitHub's asset digest on 25 October 2026. The old tag
+now returns 404, and the current online Anvil builder has changed.
 
 The direct browser delta references those five source files. It gives the same
 result as the longer Python/Anvil assembly route without executing Anvil on the
@@ -50,8 +61,12 @@ player's device. Do not substitute the latest Reforged release.
 ### Prepared ROMs
 
 Alternatively select Sacred Gold Complete 1.05 and the original Platinum
-Reforged Anvil alpha ROM. The exact donor hashes are in release.json. This mode
+Reforged 0.1.0-alpha ROM. The exact donor hashes are in release.json. This mode
 does not take the current Sacred Gold Reforged playthrough ROM or a save.
+The historical release provides Windows/Linux builders. Do not follow its
+current browser-builder link to prepare this donor: it now builds another
+version. Reforged 0.2 and 0.3 are not accepted. For a first-time setup, use the
+original-games method above, which avoids building those games separately.
 
 No Renegade Platinum, Following Renegade or Redux input is required in either
 method. This package only targets Sacred Gold.

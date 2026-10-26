@@ -59,12 +59,21 @@
     rows.clear();
     el('files').replaceChildren();
     el('input-details').replaceChildren();
+    el('clean-guide').hidden = mode !== 'clean';
+    el('prepared-guide').hidden = mode !== 'prepared';
     el('method-help').textContent = mode === 'clean'
-      ? 'Choose three clean game dumps and the two official upstream patch files. Exact supported versions are checked before building.'
-      : 'Choose Sacred Gold Complete 1.05 and the original Anvil alpha donor. These are upstream inputs, not your current playthrough ROM or save.';
+      ? 'Start with your unmodified HeartGold, Platinum and Black 2 games. Add the two patch files linked below; this page handles the build for you.'
+      : 'A shortcut for existing builds only: Sacred Gold Complete 1.05 + Platinum Reforged 0.1.0-alpha. Newer Reforged versions will not pass verification.';
     profile().inputs.forEach((input, index) => {
+      if (mode === 'clean' && (index === 0 || input.id === 'sacred_gold_patch')) {
+        const heading = document.createElement('h3');
+        heading.textContent = index === 0 ? '1. Your three games' : '2. The two patch files';
+        el('files').append(heading);
+      }
       const row = document.createElement('div'); row.className = 'file-row';
       const label = document.createElement('label'); label.htmlFor = `file-${input.id}`; label.textContent = input.label;
+      if (input.id === 'bundle') label.textContent = 'Anvil engine file · reforged.bundle';
+      if (input.id === 'reforged') label.textContent = 'Platinum Reforged · 0.1.0-alpha';
       const meta = document.createElement('span'); meta.className = 'file-meta'; meta.textContent = `${size(input.size)} · exact revision`;
       label.append(meta);
       const state = document.createElement('div'); state.className = 'file-state';

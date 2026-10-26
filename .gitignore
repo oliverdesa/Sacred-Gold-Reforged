@@ -1,0 +1,17 @@
+dist/
+output/
+local/
+games/
+inputs/
+release-inputs/
+__pycache__/
+*.pyc
+*.nds
+*.sav
+*.dsv
+*.dst
+*.bundle
+*.xdelta
+*.zip
+*.mov
+.DS_Store

@@ -1,0 +1,25 @@
+name: Patcher tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  synthetic-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install the native decoder for cross-checks
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xdelta3
+      - name: Native installer checks
+        run: python3 -m unittest discover -s tests -p test_sacred_gold_patcher.py -v
+      - name: Browser decoder checks
+        run: node --test tests/test_web_patcher.mjs
+      - name: Static package checks
+        run: python3 -m unittest discover -s tests -p test_web_patcher_package.py -v

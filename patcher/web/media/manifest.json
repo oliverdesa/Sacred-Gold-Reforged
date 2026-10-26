@@ -1,0 +1,40 @@
+{
+  "format": 1,
+  "description": "Owner-provided Chuck fifth-badge playtest; game by Drayano, engine integration based on smoldice’s Platinum Reforged.",
+  "durationSeconds": 24,
+  "width": 768,
+  "height": 576,
+  "audio": false,
+  "files": {
+    "chuck-gym-preview.mp4": {
+      "size": 2444516,
+      "sha256": "da2454c8716449d36baa2eb08871c6e404da9edd71ec47ea468ac06d838dc3c3"
+    },
+    "chuck-gym-poster.webp": {
+      "size": 25060,
+      "sha256": "55b48d78c7bcb6b65bee25febfde821bace9235036dcce3ce73b9d19416b566c"
+    },
+    "hooh-gen5.gif": {
+      "size": 67918,
+      "sha256": "bebbcbb71e795c175cdfc897ad1a0d22cbfcdbc8735a894190f72b17579a19b4"
+    },
+    "lugia-gen5.gif": {
+      "size": 92574,
+      "sha256": "0c29508c7579acaa9e9a0a453ea74248edf715f7f87a4a160271e7d72c3d90d3"
+    },
+    "hooh-still.png": {
+      "size": 2450,
+      "sha256": "83118452273ed25ddd97fe3ead496678d216868639ecac9db4b8579b7ae1e755"
+    },
+    "lugia-still.png": {
+      "size": 1908,
+      "sha256": "d7ee5702632a085d27fd2202c4fc6c4b82d8ffa52a36ab0265df2292d689fea4"
+    }
+  },
+  "spriteSources": {
+    "hooh": "https://play.pokemonshowdown.com/sprites/gen5ani/hooh.gif",
+    "lugia": "https://play.pokemonshowdown.com/sprites/gen5ani/lugia.gif",
+    "credits": "https://github.com/smogon/sprites",
+    "copyright": "Original sprites: Nintendo / Game Freak / The Pokemon Company. Supplied by the Pokemon Showdown sprite repository; not covered by our tool licences."
+  }
+}

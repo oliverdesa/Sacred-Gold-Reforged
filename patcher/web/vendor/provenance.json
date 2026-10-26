@@ -1,0 +1,30 @@
+{
+  "vcdiff.js": {
+    "repository": "https://github.com/marcrobledo/RomPatcher.js",
+    "commit": "4f17297cd1dc0835a0b0747497fa15f5f63f1623",
+    "source_path": "rom-patcher-js/modules/RomPatcher.format.vcdiff.js",
+    "sha256": "9fa42f57c6bbb0483798a8b5914813aba1100f226464296aba8c7e3c44a76a86"
+  },
+  "BinFile.js": {
+    "repository": "https://github.com/marcrobledo/RomPatcher.js",
+    "commit": "4f17297cd1dc0835a0b0747497fa15f5f63f1623",
+    "source_path": "rom-patcher-js/modules/BinFile.js",
+    "sha256": "3856e2f30bb8f105796a0371231a9b2aa37266148ac496711f07fd1e80fef688"
+  },
+  "RomPatcher-LICENSE.txt": {
+    "repository": "https://github.com/marcrobledo/RomPatcher.js",
+    "commit": "4f17297cd1dc0835a0b0747497fa15f5f63f1623",
+    "source_path": "LICENSE",
+    "sha256": "a379dd012587a2fbe434ea6fcef30f502f32077738c2bd36e9e20cce621162bb"
+  },
+  "sha256.js": {
+    "repository": "https://github.com/emn178/js-sha256",
+    "version": "0.11.1",
+    "sha256": "f3d043dcc7b164ff6d476483324dd10def5c9c4758745981cec093d5b4694fe2"
+  },
+  "SHA256-LICENSE.txt": {
+    "repository": "https://github.com/emn178/js-sha256",
+    "version": "0.11.1",
+    "sha256": "c32ec31b92e359b19ecd66d7d47bd75399e34bb3c52f21bd4c8d8b673d90c300"
+  }
+}

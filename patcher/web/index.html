@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="<!-- CSP -->">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Build Sacred Gold Reforged locally in your browser. Your selected ROMs stay on your device.">
+  <title>Sacred Gold Reforged · Local patcher</title>
+  <style>/* SITE_STYLES */</style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="wordmark" href="#">SACRED GOLD <span>REFORGED</span></a>
+      <div class="legendary-pair">
+        <div class="legendary-portraits"><img class="legendary hooh" src="media/hooh-still.png" data-still="media/hooh-still.png" data-animated="media/hooh-gen5.gif" width="107" height="101" alt="Ho-Oh"><img class="legendary lugia" src="media/lugia-still.png" data-still="media/lugia-still.png" data-animated="media/lugia-gen5.gif" width="153" height="97" alt="Lugia"></div>
+        <button id="sprite-motion" class="motion-control" type="button" aria-pressed="false">Play sprites</button>
+      </div>
+      <span class="badge" id="version">ALPHA</span>
+    </header>
+    <section class="intro" aria-labelledby="heading">
+      <div class="intro-copy">
+      <p class="eyebrow">SACRED GOLD &middot; GEN V BATTLES</p>
+      <h1 id="heading">Back to Johto.</h1>
+      <p class="lede">Drayano’s Johto adventure, with the Gen V battle engine from smoldice’s Platinum Reforged. Build your own testing ROM, right in your browser.</p>
+      <p class="privacy"><span aria-hidden="true">&#9679;</span> Built on your device. Nothing is uploaded. Your originals stay unchanged.</p>
+      <a class="hero-action" href="#patcher">Build your game <span aria-hidden="true">&#8595;</span></a>
+      <p class="byline">Sacred Gold by <a href="https://gbatemp.net/threads/pokemon-sacred-gold-storm-silver.327567/" target="_blank" rel="noopener noreferrer">Drayano</a>.<br>Gen V engine integration based on Platinum Reforged / Anvil by <a href="https://github.com/smoldice/platinum-reforged-anvil" target="_blank" rel="noopener noreferrer">smoldice</a>.</p>
+      </div>
+      <figure class="battle-preview">
+        <div class="preview-title"><span>CIANWOOD GYM</span><span>BADGE 05</span></div>
+        <div class="battle-screen"><video id="gym-preview" controls muted loop playsinline preload="none" poster="media/chuck-gym-poster.webp" width="768" height="576" aria-label="Chuck gym battle preview" aria-describedby="clip-description"><source src="media/chuck-gym-preview.mp4" type="video/mp4">Your browser cannot play this preview.</video></div>
+        <figcaption><strong>Taking on Chuck</strong><span>24 seconds from our fifth-badge playtest</span></figcaption>
+        <p id="clip-description" class="sr-only">Froslass battles Chuck’s Hariyama on the gold Cianwood Gym battlefield, with Gen V sprite animations and camera movement. This preview has no audio.</p>
+      </figure>
+    </section>
+    <section class="workspace" id="patcher" aria-labelledby="build-title">
+      <div class="section-title"><h2 id="build-title">Build your game</h2><span class="caption">No installation needed</span></div>
+      <fieldset class="methods" id="methods">
+        <legend>Choose your starting files</legend>
+        <label><input type="radio" name="mode" value="clean" checked> Clean ROMs</label>
+        <label><input type="radio" name="mode" value="prepared"> Prepared ROMs</label>
+      </fieldset>
+      <p id="method-help" class="help"></p>
+      <div id="files"></div>
+      <details class="input-details"><summary>Input details &amp; official sources</summary><div id="input-details"></div>
+        <p>Obtain the official <a href="https://gbatemp.net/threads/pokemon-sacred-gold-storm-silver.327567/" target="_blank" rel="noopener noreferrer">Sacred Gold Complete 1.05 patch from Drayano</a> and <a href="https://github.com/smoldice/platinum-reforged-anvil/releases/tag/v1.0.0-alpha" target="_blank" rel="noopener noreferrer">original Anvil bundle from smoldice</a>. Use your own cartridge dumps. Redux and Renegade Platinum patches are not needed.</p>
+      </details>
+      <div class="build-actions"><button id="build" type="button" disabled>Build Sacred Gold</button><button id="cancel" class="secondary" type="button" hidden>Cancel</button></div>
+      <div class="result" id="result" aria-live="polite" aria-atomic="true"><p id="status">Choose your files to begin.</p></div>
+      <progress id="progress" max="1" value="0" aria-label="Build progress" hidden></progress>
+      <div class="download-actions"><a id="download" class="download" hidden>Save your game · 256 MiB</a><a id="report" class="report" hidden>Save diagnostic report</a></div>
+      <noscript><p class="error">JavaScript is required to build locally in your browser.</p></noscript>
+    </section>
+    <section class="notes" aria-label="Before you play">
+      <div><h2>A testing build</h2><p>Alpha 4s still needs campaign testing. Keep a backup of your in-game save and use ordinary saves when changing versions. <a href="KNOWN_ISSUES.txt">Read the testing notes</a>.</p></div>
+      <div><h2>Works offline, too</h2><p>After this page loads, patching needs no internet connection. Use a current desktop browser with enough free memory. A finished ROM is 256 MiB.</p></div>
+    </section>
+    <footer><p>An independent compatibility project. Original games by Nintendo, Game Freak and Creatures. Not an official Drayano or smoldice release.</p><p>Browser patching: <a href="https://github.com/marcrobledo/RomPatcher.js" target="_blank" rel="noopener noreferrer">Marc Robledo / RomPatcher.js</a>. <a href="CREDITS.txt">All credits &amp; licences</a>.</p></footer>
+  </main>
+  <script>/* SITE_SCRIPT */</script>
+</body>
+</html>

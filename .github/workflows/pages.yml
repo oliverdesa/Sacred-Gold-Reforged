@@ -1,0 +1,57 @@
+name: Deploy browser patcher
+on:
+  workflow_dispatch:
+    inputs:
+      patch_release:
+        description: Approved release tag containing both pinned xdelta assets
+        type: string
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test the browser engine and static packager
+        run: |
+          node --test tests/test_web_patcher.mjs
+          python3 -m unittest discover -s tests -p test_web_patcher_package.py -v
+      - name: Get the two approved project deltas
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PATCH_RELEASE: ${{ inputs.patch_release }}
+        run: |
+          mkdir release-inputs
+          gh release download "$PATCH_RELEASE" --repo "$GITHUB_REPOSITORY" --pattern 'SacredGold-alpha4s-clean.xdelta' --pattern 'SacredGold-Reforged-alpha4s.xdelta' --dir release-inputs
+      - name: Build from source and checksum-pinned deltas
+        run: python3 tools/package_sacred_gold_web.py --clean-patch release-inputs/SacredGold-alpha4s-clean.xdelta --prepared-patch release-inputs/SacredGold-Reforged-alpha4s.xdelta --out dist
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy static site
+        id: deployment
+        uses: actions/deploy-pages@v4

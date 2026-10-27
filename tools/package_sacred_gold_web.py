@@ -23,8 +23,8 @@ LABELS = {'heartgold': 'HeartGold · USA Rev 0', 'platinum': 'Platinum · USA Re
           'bundle': 'reforged.bundle · original Anvil alpha', 'sacred_gold': 'Sacred Gold · Complete 1.05',
           'reforged': 'Platinum Reforged · original Anvil alpha'}
 PATCHES = {
-    'clean': dict(size=4988319, sha256='8d32cb885cf832d7d5e353838d162cb31d8751324e638ab7d1c0e9a9dc55f42d'),
-    'prepared': dict(size=1681956, sha256='a6d10d8b01ec5a3b48430bb6c1276df8370ec076d0129d6be4e49bfb66f5768d'),
+    'clean': dict(size=5339667, sha256='2203f72eaed6917e7f6e24f19ce5fe1af4ee05f62a0440766ffb0530f4cbc874'),
+    'prepared': dict(size=1747417, sha256='361465e6e07a60ff4438087e194fc3c139329358e86f39c51e976292f32bd418'),
 }
 SITE_MEDIA = {'chuck-gym-preview.mp4', 'chuck-gym-poster.webp', 'hooh-gen5.gif',
               'lugia-gen5.gif', 'hooh-still.png', 'lugia-still.png'}

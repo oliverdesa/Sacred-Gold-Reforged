@@ -85,9 +85,9 @@ three game dumps into an 800 MiB array. The 256 MiB output and the browser's
 download buffering still require free memory. This is intended for desktop
 browsers; mobile/low-memory support must not be assumed without testing.
 
-The HeartGold-inspired layout features a 24-second crop of the owner's Chuck
-fifth-badge recording. It loads on demand, has no audio, and pauses when a build
-starts. Ho-Oh and Lugia use the original Gen V animations from the Pokémon
+The HeartGold-inspired layout features the owner's 2 min 56 sec extended
+playtest. It loads on demand, starts muted, offers gameplay audio through its
+controls, and pauses when a build starts. Ho-Oh and Lugia use the original Gen V animations from the Pokémon
 Showdown sprite archive, with Nintendo / Game Freak attribution in CREDITS.txt.
 Use “Pause sprites” to stop them; reduced-motion preferences select static images
 by default. Sprites also pause while patching.

@@ -19,9 +19,9 @@ independent of both authors and is not presented as their official release.
 
 ## Gameplay preview and legendary sprites
 
-The Chuck fifth-badge recording was captured by the project playtester and used
-at their request. The website uses a short crop of the game screen, with audio
-and recording metadata removed; the original recording is preserved.
+The extended gameplay recording was captured by the project playtester and used
+at their request. The website preserves the full 4:3 game picture and gameplay
+audio, with recording metadata removed; the original recording is preserved.
 Preview encoding uses FFmpeg (https://ffmpeg.org/), a development tool which is
 not included in the website runtime or download.
 

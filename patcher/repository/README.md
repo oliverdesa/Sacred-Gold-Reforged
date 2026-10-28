@@ -9,7 +9,7 @@ This source repository builds a static, offline-capable Sacred Gold browser
 patcher. Selected source games stay on the player's device. It creates a new
 verified ROM without changing the inputs or accessing emulator saves.
 
-The website uses a HeartGold-inspired palette and owner-provided Chuck battle
+The website uses a HeartGold-inspired palette and owner-provided extended gameplay
 footage. Original screen recordings, game dumps, saves, Anvil bundles and
 official hack patches are excluded from this repository. Curated preview media
 is separate from the patch engine.

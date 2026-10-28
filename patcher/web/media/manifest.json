@@ -1,19 +1,11 @@
 {
   "format": 1,
-  "description": "Owner-provided Chuck fifth-badge playtest; game by Drayano, engine integration based on smoldice’s Platinum Reforged.",
-  "durationSeconds": 24,
-  "width": 768,
-  "height": 576,
-  "audio": false,
+  "description": "Owner-provided extended Sacred Gold Reforged playtest; game by Drayano, engine integration based on smoldice’s Platinum Reforged.",
+  "durationSeconds": 176.15,
+  "width": 1280,
+  "height": 960,
+  "audio": true,
   "files": {
-    "chuck-gym-preview.mp4": {
-      "size": 2444516,
-      "sha256": "da2454c8716449d36baa2eb08871c6e404da9edd71ec47ea468ac06d838dc3c3"
-    },
-    "chuck-gym-poster.webp": {
-      "size": 25060,
-      "sha256": "55b48d78c7bcb6b65bee25febfde821bace9235036dcce3ce73b9d19416b566c"
-    },
     "hooh-gen5.gif": {
       "size": 67918,
       "sha256": "bebbcbb71e795c175cdfc897ad1a0d22cbfcdbc8735a894190f72b17579a19b4"
@@ -29,6 +21,14 @@
     "lugia-still.png": {
       "size": 1908,
       "sha256": "d7ee5702632a085d27fd2202c4fc6c4b82d8ffa52a36ab0265df2292d689fea4"
+    },
+    "extended-playtest-alpha5a.mp4": {
+      "size": 46534228,
+      "sha256": "609dacff40b63629f9645bbd6037330b3e4503d1b758fa9c846ec06fac2c4f2a"
+    },
+    "extended-playtest-alpha5a.webp": {
+      "size": 37044,
+      "sha256": "a99e24f0345b5409ac094f6900a8b1daed94e921b95441c02a5a9fced05a7338"
     }
   },
   "spriteSources": {

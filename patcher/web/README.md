@@ -5,10 +5,10 @@ Sacred Gold by **Drayano**; Gen V engine integration based on **Platinum Reforge
 RomPatcher.js**, with checksums from **Chen, Yi-Cyuan's js-sha256**. See CREDITS.txt
 in the site package, or CREDITS.md in the source directory, for full attribution.
 
-This browser installer builds Alpha 5, including the melonDS battle-entry and
+This browser installer builds Alpha 5a, including the melonDS battle-entry and
 sound-cleanup guards and fast egg hatching. Frontier access still requires Jasmine.
 
-Alpha 5 moves speed controls into the in-game Options screen. Press R or touch
+Alpha 5a moves speed controls into the in-game Options screen. Press R or touch
 the title to switch pages. Field text, field timing, battle text and HP/EXP bars
 are independent; Confirm applies them and Quit cancels. Save normally to keep
 them. Experimental battle speed-up is vaulted and battle timing matches Alpha
@@ -102,7 +102,7 @@ form so stale file selections and old worker messages cannot be reused.
 ## Result and reports
 
 The output is 268435456 bytes, SHA-256:
-a6d0488d189eadfcf4cbad583b6c96bd883cd2f75f768af9aedaae1081396790
+7401754e880b386c73c7eb354a08fd717b9b9f7745994b6f367b726262346cdc
 
 Back up your ordinary in-game save before changing ROM versions. Avoid carrying
 emulator savestates across versions. The patcher does not access your emulator
@@ -144,3 +144,5 @@ Alpha 4aa adds safe particle-resource allocation with a fallback from graphics
 to available battle logic memory. This addresses Tri Attack's concurrent effect
 loads without changing its animation or mechanics. Captured-state checks pass;
 live retesting remains pending.
+
+Alpha 5a fixes the portable Frontier tutor menu setup and cancellation, merges the three tutor pools into one compatible move list, and preserves normal BP prices. Save layout and battle timing are unchanged. Tutor list, paging, no-BP, cancellation, teaching, and normal party summary were checked in DeSmuME Nuzlockers; melonDS has not been tested for this change.

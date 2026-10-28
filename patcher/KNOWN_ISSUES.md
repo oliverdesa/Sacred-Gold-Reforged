@@ -1,18 +1,18 @@
-# Sacred Gold Reforged Alpha 5 — testing status
+# Sacred Gold Reforged Alpha 5a — testing status
 
 Sacred Gold by **Drayano**; Gen V engine integration based on **Platinum Reforged
 / Anvil by smoldice**. This independent testing build is not an official release
 from either creator. Combined by [Oliver De Sa](https://github.com/oliverdesa).
 See the package credits for all contributors and licences.
 
-This is a work-in-progress game build. The installer reproduces Alpha 5.
+This is a work-in-progress game build. The installer reproduces Alpha 5a.
 
-- Alpha 5 retains independent instant field/battle text and HP/EXP bar options
+- Alpha 5a retains independent instant field/battle text and HP/EXP bar options
   in native Options (R or touch the title to switch pages). Field timing is
   separate and leaves music timing unchanged. Experimental battle speed-up is
   vaulted after a reported battle-entry black screen; native battle timing is
   restored to Alpha 4ab. Nuzlockers passed double-battle entry and a complete
-  turn; 22 focused game-code checks passed. The Alpha 5 melonDS battle check
+  turn; 22 focused game-code checks passed. The Alpha 5a melonDS battle check
   remains unverified because the test-save import was not recognized.
 - Alpha 4ab fixes Safari partner healing-dialog cleanup before unloading the
   field heap, and unlocks the portable Move Reminder after talking to the
@@ -68,3 +68,5 @@ This is a work-in-progress game build. The installer reproduces Alpha 5.
   packaging verification report for the actual installation checks performed.
 - Native Windows/macOS application packaging, signing and GUI testing across
   platforms remain future work. Python and xdelta3 are required by this prototype.
+
+Alpha 5a fixes the portable Frontier tutor menu setup and cancellation, merges the three tutor pools into one compatible move list, and preserves normal BP prices. Save layout and battle timing are unchanged. Tutor list, paging, no-BP, cancellation, teaching, and normal party summary were checked in DeSmuME Nuzlockers; melonDS has not been tested for this change.

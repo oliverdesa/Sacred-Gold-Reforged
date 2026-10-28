@@ -35,9 +35,9 @@ jobs:
           PATCH_RELEASE: ${{ inputs.patch_release }}
         run: |
           mkdir release-inputs
-          gh release download "$PATCH_RELEASE" --repo "$GITHUB_REPOSITORY" --pattern 'SacredGold-alpha5-clean.xdelta' --pattern 'SacredGold-Reforged-alpha5.xdelta' --dir release-inputs
+          gh release download "$PATCH_RELEASE" --repo "$GITHUB_REPOSITORY" --pattern 'SacredGold-alpha5a-clean.xdelta' --pattern 'SacredGold-Reforged-alpha5a.xdelta' --dir release-inputs
       - name: Build from source and checksum-pinned deltas
-        run: python3 tools/package_sacred_gold_web.py --clean-patch release-inputs/SacredGold-alpha5-clean.xdelta --prepared-patch release-inputs/SacredGold-Reforged-alpha5.xdelta --out dist
+        run: python3 tools/package_sacred_gold_web.py --clean-patch release-inputs/SacredGold-alpha5a-clean.xdelta --prepared-patch release-inputs/SacredGold-Reforged-alpha5a.xdelta --out dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

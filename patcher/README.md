@@ -1,10 +1,10 @@
-# Sacred Gold Reforged Alpha 5 — local installer prototype
+# Sacred Gold Reforged Alpha 5a — local installer prototype
 
 Sacred Gold by **Drayano**; Gen V engine integration based on **Platinum Reforged
 / Anvil by smoldice**. See THIRD_PARTY_NOTICES.md in the workspace, or CREDITS.txt
 in the installer package, for contributor and licence details.
 
-This installer builds Sacred Gold Reforged Alpha 5, including the Factory engine,
+This installer builds Sacred Gold Reforged Alpha 5a, including the Factory engine,
 opponent-themed Factory scenes, Gym/League backgrounds, melonDS battle guards
 and fast egg hatching. It reproduces the
 normal campaign ROM: Frontier access still requires Jasmine. It includes no
@@ -14,7 +14,7 @@ This is a local packaging prototype, not a public release cleared for redistribu
 Read KNOWN_ISSUES.txt before playing. Packaging verification does not establish
 that every part of the game works.
 
-Alpha 5 moves speed controls into the in-game Options screen. Press R or touch
+Alpha 5a moves speed controls into the in-game Options screen. Press R or touch
 the title to switch pages. Field text, field timing, battle text and HP/EXP bars
 are independent; Confirm applies them and Quit cancels. Save normally to keep
 them. Experimental battle speed-up is vaulted and battle timing matches Alpha
@@ -96,18 +96,18 @@ current playthrough ROM or save.
 Prepared inputs:
 
 ```sh
-python3 sacred_gold_patcher.py --sacred-gold "SacredGold-Complete.nds" --reforged "Platinum-Reforged-original-alpha.nds" --xdelta3 "/path/to/xdelta3" --out "SacredGold-Reforged-alpha5.nds"
+python3 sacred_gold_patcher.py --sacred-gold "SacredGold-Complete.nds" --reforged "Platinum-Reforged-original-alpha.nds" --xdelta3 "/path/to/xdelta3" --out "SacredGold-Reforged-alpha5a.nds"
 ```
 
 Clean inputs:
 
 ```sh
-python3 sacred_gold_patcher.py --heartgold "HeartGold.nds" --platinum "Platinum.nds" --black2 "Black2.nds" --sacred-gold-patch "SacredGold105.xdelta" --anvil-source "/path/to/pinned-anvil" --bundle "reforged.bundle" --xdelta3 "/path/to/xdelta3" --out "SacredGold-Reforged-alpha5.nds"
+python3 sacred_gold_patcher.py --heartgold "HeartGold.nds" --platinum "Platinum.nds" --black2 "Black2.nds" --sacred-gold-patch "SacredGold105.xdelta" --anvil-source "/path/to/pinned-anvil" --bundle "reforged.bundle" --xdelta3 "/path/to/xdelta3" --out "SacredGold-Reforged-alpha5a.nds"
 ```
 
 Omit --xdelta3 if xdelta3 is on PATH. On Windows, use `py -3` instead of python3.
 The output must be 268435456 bytes with SHA-256:
-a6d0488d189eadfcf4cbad583b6c96bd883cd2f75f768af9aedaae1081396790
+7401754e880b386c73c7eb354a08fd717b9b9f7745994b6f367b726262346cdc
 
 ## Saves and bug reports
 
@@ -116,7 +116,7 @@ with an ordinary in-game save; avoid carrying emulator savestates across builds.
 The installer does not import saves or change emulator settings. Save
 compatibility from arbitrary other hacks has not been established.
 
-For a bug report include Alpha 5, emulator name/version, location, single/double/
+For a bug report include Alpha 5a, emulator name/version, location, single/double/
 Factory battle, the exact action or move, screenshot/error text, and a nearby
 in-game save if available. Share the save privately; do not attach full ROMs.
 
@@ -144,3 +144,5 @@ Alpha 4aa adds safe particle-resource allocation with a fallback from graphics
 to available battle logic memory. This addresses Tri Attack's concurrent effect
 loads without changing its animation or mechanics. Captured-state checks pass;
 live retesting remains pending.
+
+Alpha 5a fixes the portable Frontier tutor menu setup and cancellation, merges the three tutor pools into one compatible move list, and preserves normal BP prices. Save layout and battle timing are unchanged. Tutor list, paging, no-BP, cancellation, teaching, and normal party summary were checked in DeSmuME Nuzlockers; melonDS has not been tested for this change.

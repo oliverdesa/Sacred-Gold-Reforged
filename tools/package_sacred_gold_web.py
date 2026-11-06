@@ -30,7 +30,7 @@ SITE_MEDIA = {'extended-playtest-alpha5a.mp4', 'extended-playtest-alpha5a.webp',
               'lugia-gen5.gif', 'hooh-still.png', 'lugia-still.png'}
 SITE_DOCS = tuple(Path('docs/alpha6-test1') / name for name in (
     'trainer-battles.xlsx', 'base-stats-and-learnsets.xlsx', 'pokemon-locations.xlsx',
-    'important-item-locations.xlsx', 'added-move-access.txt',
+    'important-item-locations.xlsx', 'added-move-access.txt', 'SacredGold-Reforged.js',
 ))
 
 

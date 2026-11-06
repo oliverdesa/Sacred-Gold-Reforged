@@ -5,8 +5,11 @@ Sacred Gold by **Drayano**; Gen V engine integration based on **Platinum Reforge
 RomPatcher.js**, with checksums from **Chen, Yi-Cyuan's js-sha256**. See CREDITS.txt
 in the site package, or CREDITS.md in the source directory, for full attribution.
 
-This browser installer builds Alpha 5a, including the melonDS battle-entry and
-sound-cleanup guards and fast egg hatching. Frontier access still requires Jasmine.
+This browser installer builds Sacred Gold Reforged Alpha 6
+(`alpha6-tm-tutor-integration-test1`). Move Manager offers compatible TMs you own,
+unlocked tutor moves and eligible reminder moves. The release includes eight
+reusable Gen V TMs, 14 free tutor moves, 505 supported Redux level-up lists and
+177 trainer move changes. Frontier access requires Jasmine.
 
 Alpha 5a moves speed controls into the in-game Options screen. Press R or touch
 the title to switch pages. Field text, field timing, battle text and HP/EXP bars
@@ -101,8 +104,8 @@ form so stale file selections and old worker messages cannot be reused.
 
 ## Result and reports
 
-The output is 268435456 bytes, SHA-256:
-7401754e880b386c73c7eb354a08fd717b9b9f7745994b6f367b726262346cdc
+The output is 268435456 bytes. Its SHA-256 is
+`13129a50a71dff548cc4b89c233c815a75eaf1691d545604c05b3cde1cc7a36b`.
 
 Back up your ordinary in-game save before changing ROM versions. Avoid carrying
 emulator savestates across versions. The patcher does not access your emulator
@@ -128,6 +131,8 @@ in release assets. Do not publish the entire game-development workspace.
 This is a local prototype. Review upstream runtime/art redistribution terms
 before publishing a game-bearing site or release. CREDITS.txt preserves the
 distinction between open-source tools and the original games/other authors' work.
+
+## Earlier build notes
 
 Alpha 4x also fixes the low-HP music preference crash found in melonDS doubles testing.
 Factory streak and weather testing remains in progress; see KNOWN_ISSUES for scope.

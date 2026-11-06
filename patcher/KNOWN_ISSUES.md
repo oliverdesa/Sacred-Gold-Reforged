@@ -1,11 +1,19 @@
-# Sacred Gold Reforged Alpha 5a — testing status
+# Sacred Gold Reforged Alpha 6 — testing status
 
 Sacred Gold by **Drayano**; Gen V engine integration based on **Platinum Reforged
 / Anvil by smoldice**. This independent testing build is not an official release
 from either creator. Combined by [Oliver De Sa](https://github.com/oliverdesa).
 See the package credits for all contributors and licences.
 
-This is a work-in-progress game build. The installer reproduces Alpha 5a.
+The patcher builds `alpha6-tm-tutor-integration-test1`.
+
+Focused gameplay checks in DeSmuME Nuzlockers and melonDS 1.1 covered Move
+Manager, move replacement, free tutor access and unlocks, reusable TMs, and
+ordinary saves. Earlier tests exercised 24 selected Gen V moves. A full
+playthrough, every move interaction, and original hardware remain untested.
+Use an ordinary in-game save when moving between ROM builds.
+
+## Earlier build notes
 
 - Alpha 5a retains independent instant field/battle text and HP/EXP bar options
   in native Options (R or touch the title to switch pages). Field timing is

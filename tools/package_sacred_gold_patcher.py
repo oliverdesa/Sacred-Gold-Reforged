@@ -12,7 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'patcher'))
 from sacred_gold_patcher import concatenate, find_xdelta, fingerprint, run_tool, verify
 
-VERSION = 'alpha5a'
+VERSION = 'alpha6-tm-tutor-integration-test1'
+TARGET = ROOT / 'platinum-reforged-anvil/Latest/SacredGold-Reforged.nds'
 ANVIL_COMMIT = '89e6cfe11420dd8823d0ecfb7885f3a528ad18f1'
 INPUTS = {
     'heartgold': dict(size=134217728, sha256='65f02a56842b75aa92d775d56d657a56fe3fa993550b04dc20704ab82d760105'),
@@ -23,7 +24,7 @@ INPUTS = {
     'sacred_gold': dict(size=131037664, sha256='49f29848878406990ea288f26872d4355c92c4a2677f56973750bbf2566c13c1'),
     'reforged': dict(size=268435456, sha256='17afd998421183ab1421c0419bf9a6d545c034dc6c9ee3fa62779d8aa342ca77'),
 }
-OUTPUT = dict(size=268435456, sha256='7401754e880b386c73c7eb354a08fd717b9b9f7745994b6f367b726262346cdc')
+OUTPUT = dict(size=268435456, sha256='13129a50a71dff548cc4b89c233c815a75eaf1691d545604c05b3cde1cc7a36b')
 
 
 def anvil_hashes(root):
@@ -85,7 +86,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--sacred-gold', type=Path, default=ROOT / 'local/sacred-gold/SacredGold-Complete-1.05.nds')
     parser.add_argument('--reforged', type=Path, default=ROOT / 'output/Platinum-Reforged-baseline.nds')
-    parser.add_argument('--target', type=Path, default=ROOT / f'output/SacredGold-Reforged-{VERSION}.nds')
+    parser.add_argument('--target', type=Path, default=TARGET)
     parser.add_argument('--anvil-source', type=Path, default=ROOT / 'platinum-reforged-anvil')
     parser.add_argument('--xdelta3', type=Path, default=ROOT / 'local/tools/xdelta-build/xdelta3')
     parser.add_argument('--out', type=Path, default=ROOT / f'output/patcher/SacredGold-Reforged-{VERSION}-installer-v1')

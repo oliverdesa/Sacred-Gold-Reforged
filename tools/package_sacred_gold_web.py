@@ -15,7 +15,7 @@ WEB = ROOT / 'patcher/web'
 sys.path.insert(0, str(ROOT / 'patcher'))
 sys.path.insert(0, str(ROOT / 'tools'))
 from sacred_gold_patcher import concatenate, decode, find_xdelta, fingerprint, run_tool, verify
-from package_sacred_gold_patcher import INPUTS, OUTPUT, VERSION
+from package_sacred_gold_patcher import INPUTS, OUTPUT, TARGET, VERSION
 
 CLEAN_ORDER = ['heartgold', 'platinum', 'black2', 'sacred_gold_patch', 'bundle']
 LABELS = {'heartgold': 'HeartGold · USA Rev 0', 'platinum': 'Platinum · USA Rev 0',
@@ -23,8 +23,8 @@ LABELS = {'heartgold': 'HeartGold · USA Rev 0', 'platinum': 'Platinum · USA Re
           'bundle': 'reforged.bundle · original Anvil alpha', 'sacred_gold': 'Sacred Gold · Complete 1.05',
           'reforged': 'Platinum Reforged · original Anvil alpha'}
 PATCHES = {
-    'clean': dict(size=5339429, sha256='0896a241ac9dabe2a6e2902da8e40b2b7f256ca97dab0276ea7b833b1d39c174'),
-    'prepared': dict(size=1747198, sha256='dd6513a36ee48f07188f9d4877348633d6c29090dea4f55e22b89b4e91fd938c'),
+    'clean': dict(size=4838298, sha256='ab704c07fd103afb8929b5118fa86207c32658931a02b67988e184be6febb3ab'),
+    'prepared': dict(size=2245913, sha256='d1b4dc26987f385260be63886c88bcf00e9f33f246d77165cf55acca403e7755'),
 }
 SITE_MEDIA = {'extended-playtest-alpha5a.mp4', 'extended-playtest-alpha5a.webp', 'hooh-gen5.gif',
               'lugia-gen5.gif', 'hooh-still.png', 'lugia-still.png'}
@@ -179,13 +179,14 @@ def encode_clean_patch(paths, target, output, xdelta):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--clean-patch', type=Path, default=ROOT / f'output/patcher/browser-research/SacredGold-{VERSION}-clean.xdelta')
+    assets = ROOT / f'output/patcher/{VERSION}-release-assets'
+    parser.add_argument('--clean-patch', type=Path, default=assets / f'SacredGold-{VERSION}-clean.xdelta')
     parser.add_argument('--prepared-patch', type=Path,
-        default=ROOT / f'output/patcher/SacredGold-Reforged-{VERSION}-installer-v1/SacredGold-Reforged-{VERSION}.xdelta')
+        default=assets / f'SacredGold-Reforged-{VERSION}.xdelta')
     parser.add_argument('--out', type=Path, default=ROOT / f'output/patcher/SacredGold-Reforged-{VERSION}-web-v1')
     parser.add_argument('--encode-clean', action='store_true', help='regenerate the clean delta from pinned local inputs first')
     parser.add_argument('--xdelta3', type=Path, default=ROOT / 'local/tools/xdelta-build/xdelta3')
-    parser.add_argument('--target', type=Path, default=ROOT / f'output/SacredGold-Reforged-{VERSION}.nds')
+    parser.add_argument('--target', type=Path, default=TARGET)
     defaults = {
         'heartgold': ROOT / 'games/Pokemon HeartGold Version (USA).nds',
         'platinum': ROOT / 'games/Pokemon-Platinum-ROM-en.nds',

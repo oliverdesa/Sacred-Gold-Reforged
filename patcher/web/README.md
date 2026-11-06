@@ -20,7 +20,7 @@ them. Experimental battle speed-up is vaulted and battle timing matches Alpha
 
 ## Use the patcher
 
-Open index.html in a current desktop browser, locally or from the hosted site.
+Open index.html in a current browser, locally or from the hosted site.
 No installation, account, Python, native xdelta executable or Anvil source
 checkout is needed. The same page works offline once loaded.
 
@@ -85,8 +85,12 @@ method. This package only targets Sacred Gold.
 
 File reads are limited to 4 MiB chunks; the browser does not concatenate all
 three game dumps into an 800 MiB array. The 256 MiB output and the browser's
-download buffering still require free memory. This is intended for desktop
-browsers; mobile/low-memory support must not be assumed without testing.
+download buffering still require free memory. On supported Android browsers,
+the patcher makes a temporary local copy as it checks the inputs. This uses up to
+783 MiB of browser storage and speeds up the small reads during assembly. The
+patcher clears the copy when the build ends and checks for leftovers when the
+page reopens after a crash. It uses direct file reads if temporary storage is
+unavailable. Direct reads can take several minutes on Android.
 
 The HeartGold-inspired layout features the owner's 2 min 56 sec extended
 playtest. It loads on demand, starts muted, offers gameplay audio through its
@@ -112,8 +116,10 @@ emulator savestates across versions. The patcher does not access your emulator
 or any saves. Read KNOWN_ISSUES.txt before playing.
 
 The optional diagnostic download is created locally. It records game/patcher
-version, starting method, result, elapsed time, browser and I/O counts, but no
-ROM contents, selected filenames or filesystem paths. It is never sent anywhere.
+version, starting method, result, elapsed time, browser, progress and file read
+counts. Save a report while the build is running or after cancelling. If progress
+pauses for 20 seconds, the page points you to that report. Reports contain no ROM contents, selected filenames
+or filesystem paths. They are never sent anywhere automatically.
 
 ## Hosting
 

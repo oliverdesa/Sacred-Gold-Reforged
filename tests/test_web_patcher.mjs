@@ -104,6 +104,72 @@ test('wrong source revision, damaged patch, and short reads are rejected', () =>
   assert.throws(() => core.assemble(good.profile, good.files, good.patch, () => new Uint8Array(1)), /read completely/);
 });
 
+test('temporary worker storage preserves validation, falls back, and cleans up', async t => {
+  for (const scenario of ['stale copy', 'quota', 'short write', 'busy', 'unsupported', 'bad checksum']) {
+    await t.test(scenario, async () => {
+      const {files, profile, patch} = setup(cases[0]);
+      if (scenario === 'bad checksum') files[0].data[0] ^= 1;
+      const size = files.reduce((total, file) => total + file.size, 0);
+      for (const file of files) file.slice = (start, end) => file.data.slice(start, end);
+      let scratch = scenario === 'stale copy' || scenario === 'busy' ? new Uint8Array(size).fill(255) : null;
+      let closed = false;
+      let writes = 0;
+      const messages = [];
+      const directory = {
+        removeEntry: async () => {
+          if (!scratch) throw Object.assign(new Error(), {name: 'NotFoundError'});
+          scratch = null;
+        },
+        getFileHandle: async () => {
+          assert.equal(scratch, null, 'remove an orphan before staging');
+          scratch = new Uint8Array(size);
+          return {createSyncAccessHandle: async () => ({
+            write(bytes, {at}) {
+              writes++;
+              if (scenario === 'short write' && writes === 2) return 0;
+              scratch.set(bytes, at);
+              return bytes.length;
+            },
+            read(bytes, {at}) {
+              bytes.set(scratch.subarray(at, at + bytes.length));
+              return bytes.length;
+            },
+            close() { closed = true; }
+          })};
+        }
+      };
+      const storage = scenario === 'unsupported' ? {} : {
+        getDirectory: async () => directory,
+        estimate: async () => ({quota: scenario === 'quota' ? size - 1 : size * 2, usage: 0})
+      };
+      const worker = {...context, performance, navigator: {storage, locks: {
+        request: async (_name, options, callback) => {
+          assert.equal(options.ifAvailable, true);
+          return callback(scenario === 'busy' ? null : {});
+        }
+      }}, FileReaderSync: class { readAsArrayBuffer(bytes) { return bytes.buffer; } },
+      postMessage: message => messages.push(message)};
+      worker.self = worker;
+      vm.runInNewContext(code, worker);
+      await worker.onmessage({data: {files, profile, patch, temporaryName: 'test-copy'}});
+      const final = messages.at(-1);
+      if (scenario === 'bad checksum') {
+        assert.equal(final.type, 'error');
+        assert.match(final.message, /checksum does not match/);
+      } else {
+        assert.equal(final.type, 'complete');
+        assert.equal(hash(final.bytes), profile.output.sha256);
+      }
+      const fallback = {'quota': 'space', 'short write': 'storage', 'busy': 'busy', 'unsupported': 'unsupported'}[scenario];
+      assert.equal(messages.find(message => message.fallback)?.fallback, fallback);
+      if (scenario === 'stale copy') assert.ok(final.stats.temporaryReads > 0);
+      if (scenario === 'busy') assert.equal(scratch[0], 255, 'leave an active build alone');
+      else assert.equal(scratch, null);
+      if (writes) assert.equal(closed, true);
+    });
+  }
+});
+
 test('no verified output is returned for the wrong final hash', () => {
   const s = setup(cases[0]); s.profile.output.sha256 = '0'.repeat(64);
   assert.throws(() => core.assemble(s.profile, s.files, s.patch, s.read), /Finished ROM failed/);

@@ -1,11 +1,10 @@
-# Sacred Gold Reforged Alpha 6 — local installer prototype
+# Sacred Gold Reforged local installer
 
 Sacred Gold by **Drayano**; Gen V engine integration based on **Platinum Reforged
 / Anvil by smoldice**. See THIRD_PARTY_NOTICES.md in the workspace, or CREDITS.txt
 in the installer package, for contributor and licence details.
 
-This installer builds Sacred Gold Reforged
-`alpha6-tm-tutor-integration-test1` with Move Manager, the new Gen V TMs and
+This installer builds Sacred Gold Reforged with Move Manager, the new Gen V TMs and
 tutors, and the updated trainer movesets and learnsets. Frontier access
 requires Jasmine. Players supply their own game dumps and upstream patches.
 
@@ -95,18 +94,18 @@ current playthrough ROM or save.
 Prepared inputs:
 
 ```sh
-python3 sacred_gold_patcher.py --sacred-gold "SacredGold-Complete.nds" --reforged "Platinum-Reforged-original-alpha.nds" --xdelta3 "/path/to/xdelta3" --out "SacredGold-Reforged-alpha6.nds"
+python3 sacred_gold_patcher.py --sacred-gold "SacredGold-Complete.nds" --reforged "Platinum-Reforged-original-alpha.nds" --xdelta3 "/path/to/xdelta3" --out "SacredGoldReforged.nds"
 ```
 
 Clean inputs:
 
 ```sh
-python3 sacred_gold_patcher.py --heartgold "HeartGold.nds" --platinum "Platinum.nds" --black2 "Black2.nds" --sacred-gold-patch "SacredGold105.xdelta" --anvil-source "/path/to/pinned-anvil" --bundle "reforged.bundle" --xdelta3 "/path/to/xdelta3" --out "SacredGold-Reforged-alpha6.nds"
+python3 sacred_gold_patcher.py --heartgold "HeartGold.nds" --platinum "Platinum.nds" --black2 "Black2.nds" --sacred-gold-patch "SacredGold105.xdelta" --anvil-source "/path/to/pinned-anvil" --bundle "reforged.bundle" --xdelta3 "/path/to/xdelta3" --out "SacredGoldReforged.nds"
 ```
 
 Omit --xdelta3 if xdelta3 is on PATH. On Windows, use `py -3` instead of python3.
 The output must be 268435456 bytes with SHA-256:
-13129a50a71dff548cc4b89c233c815a75eaf1691d545604c05b3cde1cc7a36b
+7ff877a7e9c9aba5b3aa8f1a4ed29bdb142c7f8de12bd5c5625209c5e07291a1
 
 ## Saves and bug reports
 

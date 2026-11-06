@@ -12,8 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'patcher'))
 from sacred_gold_patcher import concatenate, find_xdelta, fingerprint, run_tool, verify
 
-VERSION = 'alpha6-tm-tutor-integration-test1'
-TARGET = ROOT / 'platinum-reforged-anvil/Latest/SacredGold-Reforged.nds'
+VERSION = 'alpha6-hardware-compatibility'
+TARGET = ROOT / 'output/hardware-tests/20261106/SacredGold-Reforged-alpha6-3DS-test1.nds'
 ANVIL_COMMIT = '89e6cfe11420dd8823d0ecfb7885f3a528ad18f1'
 INPUTS = {
     'heartgold': dict(size=134217728, sha256='65f02a56842b75aa92d775d56d657a56fe3fa993550b04dc20704ab82d760105'),
@@ -24,7 +24,7 @@ INPUTS = {
     'sacred_gold': dict(size=131037664, sha256='49f29848878406990ea288f26872d4355c92c4a2677f56973750bbf2566c13c1'),
     'reforged': dict(size=268435456, sha256='17afd998421183ab1421c0419bf9a6d545c034dc6c9ee3fa62779d8aa342ca77'),
 }
-OUTPUT = dict(size=268435456, sha256='13129a50a71dff548cc4b89c233c815a75eaf1691d545604c05b3cde1cc7a36b')
+OUTPUT = dict(size=268435456, sha256='7ff877a7e9c9aba5b3aa8f1a4ed29bdb142c7f8de12bd5c5625209c5e07291a1')
 
 
 def anvil_hashes(root):

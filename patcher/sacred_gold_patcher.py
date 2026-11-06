@@ -173,7 +173,7 @@ def build(options, progress=print):
         progress('Preparing the local patch source...')
         source = temp / 'combined-source.bin'
         concatenate([files[key] for key in release['source_order']], source)
-        progress(f'Building Sacred Gold Reforged {release["version"]}...')
+        progress('Building Sacred Gold Reforged...')
         staged = temp / 'verified-output.nds'
         decode(xdelta, source, release_path.parent / release['patch_name'], staged)
         verify(staged, release['output'], 'Finished ROM')
@@ -190,7 +190,7 @@ def gui(release_path):
         raise ValueError('This Python has no Tk file picker. Use command-line mode, or install Python with Tk.') from None
     release = load_release(release_path)
     root = tk.Tk()
-    root.title(f'Sacred Gold Reforged {release["version"]} — local installer')
+    root.title('Sacred Gold Reforged')
     root.minsize(760, 560)
     frame = ttk.Frame(root, padding=16)
     frame.pack(fill='both', expand=True)
@@ -233,7 +233,7 @@ def gui(release_path):
     field(prepared, 'reforged', 'Original Reforged donor')
     field(frame, 'xdelta3', 'xdelta3 executable (or PATH)')
     field(frame, 'out', 'New output ROM', save=True,
-          initial=str(Path.home() / f'SacredGold-Reforged-{release["version"]}.nds'))
+          initial=str(Path.home() / 'SacredGoldReforged.nds'))
     status = tk.StringVar(value='Select inputs, then Build. See README.txt for supported versions and setup.')
     ttk.Label(frame, textvariable=status, wraplength=700).pack(fill='x', pady=12)
     messages = queue.Queue()

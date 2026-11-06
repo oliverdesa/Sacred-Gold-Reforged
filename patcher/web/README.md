@@ -5,8 +5,8 @@ Sacred Gold by **Drayano**; Gen V engine integration based on **Platinum Reforge
 RomPatcher.js**, with checksums from **Chen, Yi-Cyuan's js-sha256**. See CREDITS.txt
 in the site package, or CREDITS.md in the source directory, for full attribution.
 
-This browser installer builds Sacred Gold Reforged Alpha 6
-(`alpha6-tm-tutor-integration-test1`). Move Manager offers compatible TMs you own,
+This browser installer builds Sacred Gold Reforged. Boot has been tested on a
+Nintendo 3DS with TWiLight Menu++. Move Manager offers compatible TMs you own,
 unlocked tutor moves and eligible reminder moves. The release includes eight
 reusable Gen V TMs, 14 free tutor moves, 505 supported Redux level-up lists and
 177 trainer move changes. Frontier access requires Jasmine.
@@ -108,8 +108,8 @@ form so stale file selections and old worker messages cannot be reused.
 
 ## Result and reports
 
-The output is 268435456 bytes. Its SHA-256 is
-`13129a50a71dff548cc4b89c233c815a75eaf1691d545604c05b3cde1cc7a36b`.
+The output, `SacredGoldReforged.nds`, is 268435456 bytes. Its SHA-256 is
+`7ff877a7e9c9aba5b3aa8f1a4ed29bdb142c7f8de12bd5c5625209c5e07291a1`.
 
 Back up your ordinary in-game save before changing ROM versions. Avoid carrying
 emulator savestates across versions. The patcher does not access your emulator

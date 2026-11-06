@@ -1,16 +1,17 @@
-# Sacred Gold Reforged Alpha 6 — testing status
+# Sacred Gold Reforged testing status
 
 Sacred Gold by **Drayano**; Gen V engine integration based on **Platinum Reforged
 / Anvil by smoldice**. This independent testing build is not an official release
 from either creator. Combined by [Oliver De Sa](https://github.com/oliverdesa).
 See the package credits for all contributors and licences.
 
-The patcher builds `alpha6-tm-tutor-integration-test1`.
+The ROM layout update was tested on a Nintendo 3DS through TWiLight Menu++
+with nds-bootstrap v2.4.5.
 
 Focused gameplay checks in DeSmuME Nuzlockers and melonDS 1.1 covered Move
 Manager, move replacement, free tutor access and unlocks, reusable TMs, and
 ordinary saves. Earlier tests exercised 24 selected Gen V moves. A full
-playthrough, every move interaction, and original hardware remain untested.
+playthrough and every move interaction remain untested.
 Use an ordinary in-game save when moving between ROM builds.
 
 ## Earlier build notes
@@ -71,7 +72,7 @@ Use an ordinary in-game save when moving between ROM builds.
 - Earlier callbacks, capture handoffs and field/menu fixes have focused checks
   and some user testing. They do not constitute a complete campaign regression.
 - The recorded melonDS 1.1 and DeSmuME tests are limited regression checks.
-  Hardware, flashcart, Delta and complete campaign compatibility remain unverified. Keep in-game save backups.
+  Other hardware, flashcarts, Delta and complete campaign compatibility remain unverified. Keep in-game save backups.
 - The installer backend is verified separately from gameplay. See the workspace
   packaging verification report for the actual installation checks performed.
 - Native Windows/macOS application packaging, signing and GUI testing across

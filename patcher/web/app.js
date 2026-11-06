@@ -139,7 +139,7 @@
                     browser: navigator.userAgent, ...(stats ? {io: stats} : {})};
     if (reportUrl) URL.revokeObjectURL(reportUrl);
     reportUrl = URL.createObjectURL(new Blob([JSON.stringify(report, null, 2)], {type: 'application/json'}));
-    el('report').href = reportUrl; el('report').download = `SacredGold-${SG_RELEASE.version}-diagnostic.json`;
+    el('report').href = reportUrl; el('report').download = 'SacredGoldReforged-diagnostic.json';
     el('report').hidden = false;
   }
 
@@ -212,7 +212,7 @@
           phase = 'complete';
           try { gameUrl = URL.createObjectURL(new Blob([data.bytes], {type: 'application/octet-stream'})); }
           catch { failed('The browser could not prepare the download. Close unused tabs and try again.', data.elapsedMs); return; }
-          el('download').href = gameUrl; el('download').download = `SacredGold-Reforged-${SG_RELEASE.version}.nds`;
+          el('download').href = gameUrl; el('download').download = 'SacredGoldReforged.nds';
           el('download').hidden = false;
           el('progress').value = 1;
           diagnostic('verified', data.elapsedMs, data.stats);
@@ -248,7 +248,6 @@
   }));
   window.addEventListener('pagehide', () => { if (worker) stopWorker(); });
   window.addEventListener('pageshow', event => { if (event.persisted) { stopWorker(); render(); sweepTemporaryStorage(); } });
-  el('version').textContent = `${SG_RELEASE.version.toUpperCase()} · TEST BUILD`;
   render();
   sweepTemporaryStorage();
 })();

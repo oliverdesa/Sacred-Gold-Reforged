@@ -9,7 +9,8 @@ This browser installer builds Sacred Gold Reforged. Boot has been tested on a
 Nintendo 3DS with TWiLight Menu++. Move Manager offers compatible TMs you own,
 unlocked tutor moves and eligible reminder moves. The release includes eight
 reusable Gen V TMs, 14 free tutor moves, 505 supported Redux level-up lists and
-177 trainer move changes. Frontier access requires Jasmine.
+177 trainer move changes. Pre-Status is available in Reforged Tools.
+Frontier access requires Jasmine.
 
 Alpha 5a moves speed controls into the in-game Options screen. Press R or touch
 the title to switch pages. Field text, field timing, battle text and HP/EXP bars
@@ -109,7 +110,7 @@ form so stale file selections and old worker messages cannot be reused.
 ## Result and reports
 
 The output, `SacredGoldReforged.nds`, is 268435456 bytes. Its SHA-256 is
-`7ff877a7e9c9aba5b3aa8f1a4ed29bdb142c7f8de12bd5c5625209c5e07291a1`.
+`beed179f2dee8f883c5726dc33405d2b3465d1cae2707cd1734ba73c19a75d23`.
 
 Back up your ordinary in-game save before changing ROM versions. Avoid carrying
 emulator savestates across versions. The patcher does not access your emulator

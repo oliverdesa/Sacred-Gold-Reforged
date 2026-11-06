@@ -105,7 +105,7 @@ python3 sacred_gold_patcher.py --heartgold "HeartGold.nds" --platinum "Platinum.
 
 Omit --xdelta3 if xdelta3 is on PATH. On Windows, use `py -3` instead of python3.
 The output must be 268435456 bytes with SHA-256:
-7ff877a7e9c9aba5b3aa8f1a4ed29bdb142c7f8de12bd5c5625209c5e07291a1
+beed179f2dee8f883c5726dc33405d2b3465d1cae2707cd1734ba73c19a75d23
 
 ## Saves and bug reports
 

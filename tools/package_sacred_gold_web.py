@@ -23,8 +23,8 @@ LABELS = {'heartgold': 'HeartGold · USA Rev 0', 'platinum': 'Platinum · USA Re
           'bundle': 'reforged.bundle · original Anvil alpha', 'sacred_gold': 'Sacred Gold · Complete 1.05',
           'reforged': 'Platinum Reforged · original Anvil alpha'}
 PATCHES = {
-    'clean': dict(size=4838555, sha256='edba2f446df7bca389f703439f84891d32cf5d0c43e7e9d1ec045c7ef630a9ba'),
-    'prepared': dict(size=2246191, sha256='7c02bbd120a3ff74c77330fd3712a91dd1f24faae6b4e55eeb8782f7bb13cb89'),
+    'clean': dict(size=4867951, sha256='07b0333514ebe224d59d213a89d194f14d46c6149a98618da09f9c9d7853d0c9'),
+    'prepared': dict(size=2285412, sha256='04ccc2f8fee468fd6646e00bc1fc02b605015da4d68997fe152ef0f5d2d98505'),
 }
 SITE_MEDIA = {'extended-playtest-alpha5a.mp4', 'extended-playtest-alpha5a.webp', 'hooh-gen5.gif',
               'lugia-gen5.gif', 'hooh-still.png', 'lugia-still.png'}

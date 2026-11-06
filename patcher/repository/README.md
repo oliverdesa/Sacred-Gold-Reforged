@@ -36,8 +36,8 @@ For Alpha 6, place the two matching project deltas in `release-inputs/` and run:
 
 ```sh
 python3 tools/package_sacred_gold_web.py \
-  --clean-patch release-inputs/SacredGold-alpha6-hardware-compatibility-clean.xdelta \
-  --prepared-patch release-inputs/SacredGold-Reforged-alpha6-hardware-compatibility.xdelta \
+  --clean-patch release-inputs/SacredGold-alpha6-hardware-prestatus-clean.xdelta \
+  --prepared-patch release-inputs/SacredGold-Reforged-alpha6-hardware-prestatus.xdelta \
   --out dist
 ```
 

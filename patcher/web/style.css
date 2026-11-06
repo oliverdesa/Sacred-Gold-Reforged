@@ -19,3 +19,12 @@ main{max-width:1220px;padding-top:32px}header{border-bottom:3px double #bba36a;p
 @media(max-width:700px){
   .badge{max-width:58vw;white-space:normal;overflow-wrap:anywhere;text-align:right}
 }
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:0 24px}
+.player-docs{margin-bottom:28px}
+.player-docs .section-title{margin-bottom:4px}
+.player-docs p{margin:0 0 16px;color:var(--muted);font-size:13px}
+.player-docs ul{margin:0;padding:0;list-style:none}
+.player-docs li{display:grid;grid-template-columns:minmax(180px,1fr) 2fr;gap:8px 24px;padding:12px 0;border-top:1px solid var(--line);font-size:14px}
+.player-docs li span{color:var(--muted)}
+@media(max-width:540px){.player-docs li{grid-template-columns:1fr;gap:2px}}

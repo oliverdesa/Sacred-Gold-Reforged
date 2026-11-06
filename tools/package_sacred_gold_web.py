@@ -28,6 +28,10 @@ PATCHES = {
 }
 SITE_MEDIA = {'extended-playtest-alpha5a.mp4', 'extended-playtest-alpha5a.webp', 'hooh-gen5.gif',
               'lugia-gen5.gif', 'hooh-still.png', 'lugia-still.png'}
+SITE_DOCS = tuple(Path('docs/alpha6-test1') / name for name in (
+    'trainer-battles.xlsx', 'base-stats-and-learnsets.xlsx', 'pokemon-locations.xlsx',
+    'important-item-locations.xlsx', 'added-move-access.txt',
+))
 
 
 def replace_once(source, before, after):
@@ -128,6 +132,10 @@ def build_site(out, clean_patch, prepared_patch):
         (staging / 'media').mkdir()
         for name in [*media['files'], 'manifest.json']:
             shutil.copyfile(WEB / 'media' / name, staging / 'media' / name)
+        for path in SITE_DOCS:
+            target = staging / path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(WEB / path, target)
         shutil.copyfile(WEB / 'README.md', staging / 'README.md')
         shutil.copyfile(WEB / 'CREDITS.md', staging / 'CREDITS.txt')
         shutil.copyfile(ROOT / 'patcher/KNOWN_ISSUES.md', staging / 'KNOWN_ISSUES.txt')

@@ -1,0 +1,550 @@
+Sacred Gold Reforged — Move Access
+Alpha6-tm-tutor-integration-test1
+
+REUSABLE TMS
+TM03 Psyshock — Sabrina, after the Marsh Badge. Talk to her again after winning.
+TM23 Smack Down — new aide in Union Cave B1F, after Falkner.
+TM34 Sludge Wave — new aide in Team Rocket HQ B2F, after clearing the hideout.
+TM41 Snarl — new aide in the Team Rocket HQ B2F side room, after clearing it.
+TM43 Flame Charge — Fisherman in Route32 Pokémon Center, after Falkner.
+TM62 Acrobatics — new aide in Cianwood Pokémon Center, after Chuck.
+TM72 Volt Switch — Radio Tower director after the Rocket takeover is resolved.
+  An aide on Radio Tower1F can also provide it if the director has left.
+TM83 Work Up — Goldenrod Department Store5F TM counter, ₽1,500.
+
+These eight items replace their previous contents. Other TMs and HMs retain
+their contents and compatibility. New-move machine compatibility follows the
+actual Blaze Black2 Redux v1.4.1 move, including its repurposed machine slots.
+You must own a TM and use a compatible Pokémon. TMs remain reusable.
+Earlier duplicate gifts/ground copies now give a Heart Scale. The displaced
+Celadon/Pewter shop entries are removed; Goldenrod's other stock is retained.
+
+FREE MOVE TUTORS
+All four new tutors stand near the right side of their Pokémon Center's lobby.
+Azalea, after Bugsy — Echoed Voice, Incinerate.
+Goldenrod, after Whitney — Low Sweep, Electroweb.
+Olivine, after Jasmine — Dual Chop, Foul Play, After You, Wonder Room,
+  Magic Room, Quash.
+Saffron, after first Champion Lance — Venoshock, Frost Breath, Dragon Tail,
+  Retaliate.
+
+Only verified Redux machine/tutor learners qualify. These tutors cost no BP,
+items or money. Their unlocked moves also appear in portable Move Manager.
+Existing native tutors keep their original locations and conditions; the
+portable Move Manager teaches their unlocked compatible moves for free.
+Struggle Bug is available through level-up and the Move Reminder. Round is
+implemented, but has no TM, tutor, or level-up source in this build.
+
+MOVE REMINDER
+The Cianwood aide also unlocks the portable reminder after Chuck, including
+when you already own TM62. The original reminder unlock still works.
+Move Manager offers eligible moves learned at or below the Pokémon's level,
+including level1 entries. It does not grant future level-up moves.
+
+LEGACY TM MOVES
+A separate free tutor in Route32 Pokémon Center offers displaced moves.
+They also appear in Move Manager. Compatibility uses the original TM learners.
+Water Pulse / Shock Wave — after Falkner.
+Silver Wind / Natural Gift — after Whitney.
+Secret Power — after Morty.
+Iron Tail — after Jasmine.
+Avalanche — after clearing the Radio Tower.
+Torment — after first Champion Lance.
+
+Owning one of the eight changed TMs also preserves access to its former move,
+even before the listed legacy unlock. Move Manager records this entitlement
+when opened. Existing saves keep their equipped moves and PP; already-owned
+TMs immediately teach their new contents. No new save format is required.
+
+LEVEL-UP ACCESS
+Supported Redux v1.4.1 lists are installed for493 species and12 alternate
+forms (505 lists). The workbook contains the existing495 species/form columns;
+the full alternate-form lists follow below. Current Fairy move additions stay.
+Butterfree learns Tailwind and Rage Powder at37; Quiver Dance remains61.
+Player Cloyster learns Shell Smash at78. Pryce's approved level72 rematch
+exception does not change player access. Strong setup/signature moves remain
+species- and level-restricted unless another listed source legally supplies them.
+
+This is a partial Redux import:23 unsupported move names /424 species-level
+entries remain omitted. The exact technical ledger is retained with the build
+archive. Supported new moves and their actual level-up access follow.
+
+NEW GEN V MOVES (86; availability is species-specific)
+468 Hone Claws
+469 Wide Guard
+470 Guard Split
+471 Power Split
+472 Wonder Room
+473 Psyshock
+474 Venoshock
+475 Autotomize
+476 Rage Powder
+477 Telekinesis
+478 Magic Room
+479 Smack Down
+480 Storm Throw
+481 Flame Burst
+482 Sludge Wave
+483 Quiver Dance
+484 Heavy Slam
+485 Synchronoise
+486 Electro Ball
+487 Soak
+488 Flame Charge
+489 Coil
+490 Low Sweep
+491 Acid Spray
+492 Foul Play
+493 Simple Beam
+494 Entrainment
+495 After You
+496 Round
+497 Echoed Voice
+498 Chip Away
+499 Clear Smog
+500 Stored Power
+501 Quick Guard
+502 Ally Switch
+504 Shell Smash
+505 Heal Pulse
+506 Hex
+507 Sky Drop
+508 Shift Gear
+509 Circle Throw
+510 Incinerate
+511 Quash
+512 Acrobatics
+513 Reflect Type
+514 Retaliate
+515 Final Gambit
+516 Bestow
+517 Inferno
+518 Water Pledge
+519 Fire Pledge
+520 Grass Pledge
+521 Volt Switch
+522 Struggle Bug
+524 Frost Breath
+525 Dragon Tail
+526 Work Up
+527 Electroweb
+530 Dual Chop
+531 Heart Stamp
+532 Horn Leech
+533 Sacred Sword
+534 Razor Shell
+535 Heat Crash
+536 Leaf Tornado
+537 Steamroller
+538 Cotton Guard
+539 Night Daze
+540 Psystrike
+541 Tail Slap
+543 Head Charge
+544 Gear Grind
+545 Searing Shot
+546 Techno Blast
+547 Relic Song
+548 Secret Sword
+549 Glaciate
+550 Bolt Strike
+551 Blue Flare
+552 Fiery Dance
+553 Freeze Shock
+554 Ice Burn
+555 Snarl
+557 V-create
+558 Fusion Flare
+559 Fusion Bolt
+
+CURRENT PAIRED LEVEL-UP ACCESS FOR THE NEW CATALOG
+001 Bulbasaur: Venoshock 16
+002 Ivysaur: Venoshock 16
+003 Venusaur: Venoshock 16
+004 Charmander: Flame Burst 22, Inferno 37, Heat Crash 43
+005 Charmeleon: Flame Burst 22, Inferno 43, Heat Crash 49
+006 Charizard: Flame Burst 22, Inferno 43, Heat Crash 54
+009 Blastoise: Shell Smash 66
+010 Caterpie: Struggle Bug 1, Electroweb 6
+012 Butterfree: Struggle Bug 1, Rage Powder 37, Quiver Dance 61
+013 Weedle: Struggle Bug 1
+016 Pidgey: Echoed Voice 5
+017 Pidgeotto: Echoed Voice 5
+018 Pidgeot: Echoed Voice 5, Quick Guard 36
+019 Rattata: Final Gambit 58
+020 Raticate: After You 20, Final Gambit 64
+023 Ekans: Coil 20, Acid Spray 34
+024 Arbok: Coil 20, Acid Spray 35
+025 Pikachu: Electro Ball 24, Heart Stamp 54
+027 Sandshrew: Chip Away 31
+028 Sandslash: Chip Away 32
+031 Nidoqueen: Chip Away 25
+034 Nidoking: Chip Away 25
+035 Clefairy: Stored Power 13, Heal Pulse 25
+037 Vulpix: Hex 28, Flame Burst 31, Inferno 44
+038 Ninetales: Foul Play 1, Hex 1, Stored Power 1, Inferno 45
+039 Jigglypuff: Bestow 7
+041 Zubat: Wide Guard 56
+042 Golbat: Wide Guard 63
+046 Paras: Struggle Bug 21, Wide Guard 23
+047 Parasect: Struggle Bug 21, Wide Guard 23, Rage Powder 24
+048 Venonat: Struggle Bug 5, Acid Spray 14, Rage Powder 29
+049 Venomoth: Struggle Bug 5, Acid Spray 14, Rage Powder 29, Quiver Dance 50
+050 Diglett: Ally Switch 22, Final Gambit 56
+051 Dugtrio: Ally Switch 22, Final Gambit 58
+052 Meowth: Foul Play 30
+053 Persian: Foul Play 32
+054 Psyduck: Clear Smog 8, Soak 22, Simple Beam 26, Synchronoise 28, Wonder Room 50
+055 Golduck: Clear Smog 8, Soak 22, Simple Beam 27, Synchronoise 29, Wonder Room 52
+056 Mankey: Final Gambit 58
+057 Primeape: Final Gambit 64
+058 Growlithe: Flame Burst 28
+061 Poliwhirl: Storm Throw 48
+062 Poliwrath: Dual Chop 1, Circle Throw 25, Circle Throw 45, Storm Throw 50
+064 Kadabra: Ally Switch 23, Wonder Room 26, Telekinesis 34, Stored Power 52
+065 Alakazam: Ally Switch 23, Wonder Room 26, Telekinesis 34, Stored Power 52
+066 Machop: Dual Chop 15, Heavy Slam 41
+067 Machoke: Dual Chop 15, Heavy Slam 42
+068 Machamp: Dual Chop 15, Heavy Slam 42
+069 Bellsprout: Clear Smog 12, Acid Spray 17
+070 Weepinbell: Clear Smog 12, Acid Spray 17
+071 Victreebel: Leaf Tornado 27
+072 Tentacool: Hex 28
+073 Tentacruel: Hex 28
+074 Geodude: Wide Guard 56
+075 Graveler: Autotomize 1, Wide Guard 58
+076 Golem: Steamroller 1, Autotomize 1, Wide Guard 58
+077 Ponyta: Flame Charge 23
+078 Rapidash: Flame Charge 23
+079 Slowpoke: Wonder Room 28, Heal Pulse 50
+080 Slowbro: Wonder Room 28, Heal Pulse 57
+081 Magnemite: Electro Ball 25
+082 Magneton: Electro Ball 25
+083 Farfetch’d: Simple Beam 31, Quick Guard 37, Final Gambit 68
+086 Seel: Entrainment 25
+087 Dewgong: Entrainment 25
+088 Grimer: Acid Spray 29
+089 Muk: Clear Smog 1, Acid Spray 29, Sludge Wave 39
+090 Shellder: Razor Shell 40
+091 Cloyster: Razor Shell 40, Shell Smash 78
+092 Gastly: Clear Smog 23, Reflect Type 27, Hex 32
+093 Haunter: Clear Smog 23, Reflect Type 28, Hex 33
+094 Gengar: Clear Smog 23, Reflect Type 28, Hex 33
+095 Onix: Coil 28, Dragon Tail 37, Autotomize 44, Wide Guard 60, Heavy Slam 64
+096 Drowzee: Synchronoise 39
+097 Hypno: Synchronoise 46
+098 Krabby: Razor Shell 20, Chip Away 32
+099 Kingler: Wide Guard 1, Razor Shell 20, Chip Away 34
+100 Voltorb: Volt Switch 28, Foul Play 51
+101 Electrode: Volt Switch 28, Electro Ball 30, Foul Play 52
+102 Exeggcute: Bestow 54
+104 Cubone: Retaliate 21, Chip Away 33
+105 Marowak: Retaliate 21, Chip Away 34
+106 Hitmonlee: Wide Guard 44
+107 Hitmonchan: Wide Guard 37
+108 Lickitung: Chip Away 31
+109 Koffing: Clear Smog 17
+110 Weezing: Clear Smog 17
+111 Rhyhorn: Chip Away 22
+112 Rhydon: Chip Away 22, Heavy Slam 59
+113 Chansey: Bestow 27, Heal Pulse 33
+114 Tangela: Leaf Tornado 16, Rage Powder 40
+115 Kangaskhan: Chip Away 22, Circle Throw 32
+116 Horsea: Clear Smog 37
+117 Seadra: Clear Smog 37
+118 Goldeen: Soak 32
+119 Seaking: Soak 32
+120 Staryu: Reflect Type 37, Wonder Room 40
+122 Mr. Mime: Heal Pulse 29, Quick Guard 48, Wide Guard 48
+123 Scyther: Quick Guard 25, Struggle Bug 31
+124 Jynx: Heart Stamp 10
+125 Electabuzz: Electro Ball 18, Dual Chop 27
+126 Magmar: Clear Smog 5, Flame Burst 18
+127 Pinsir: Storm Throw 31, Storm Throw 46
+128 Tauros: Work Up 5
+130 Gyarados: Coil 58
+133 Eevee: Stored Power 1, Synchronoise 34
+134 Vaporeon: Stored Power 1, Synchronoise 50
+135 Jolteon: Stored Power 1, Electro Ball 36, Synchronoise 50
+136 Flareon: Stored Power 1, Synchronoise 50
+137 Porygon: Wonder Room 22, Foul Play 56
+138 Omanyte: Shell Smash 52
+139 Omastar: Shell Smash 53
+143 Snorlax: Heat Crash 1, Chip Away 18, Heavy Slam 54
+147 Dratini: Dragon Tail 16, Coil 34
+148 Dragonair: Dragon Tail 16, Coil 37
+149 Dragonite: Dragon Tail 16, Coil 37
+150 Mewtwo: Electro Ball 1, Heal Pulse 1, Stored Power 1, Psystrike 70
+151 Mew: Stored Power 10, Reflect Type 15
+152 Chikorita: Heal Pulse 28
+153 Bayleef: Heal Pulse 28
+154 Meganium: Heal Pulse 28
+155 Cyndaquil: Flame Burst 22, Work Up 37, Inferno 43
+156 Quilava: Flame Burst 22, Work Up 37, Inferno 43
+157 Typhlosion: Flame Burst 22, Inferno 43
+158 Totodile: Hone Claws 34, Chip Away 37
+159 Croconaw: Hone Claws 34, Chip Away 37
+160 Feraligatr: Hone Claws 34, Chip Away 37
+161 Sentret: Tail Slap 29
+162 Furret: Coil 25, Tail Slap 29
+163 Hoothoot: Synchronoise 40
+164 Noctowl: Stored Power 20, Synchronoise 42
+165 Ledyba: Struggle Bug 5
+166 Ledian: Struggle Bug 5
+167 Spinarak: Electroweb 24, Rage Powder 26, Foul Play 50
+168 Ariados: Electroweb 25, Rage Powder 27, Foul Play 52
+169 Crobat: Wide Guard 64
+170 Chinchou: Soak 34
+171 Lanturn: Electro Ball 1, Soak 35
+175 Togepi: After You 4, Stored Power 13
+176 Togetic: After You 4, Stored Power 13
+177 Natu: Simple Beam 34, Synchronoise 44
+178 Xatu: Simple Beam 35, Synchronoise 46, Foul Play 62
+179 Mareep: Electroweb 14, Electro Ball 18
+180 Flaaffy: Electroweb 14, Cotton Guard 15, Electro Ball 18
+181 Ampharos: Electroweb 14, Cotton Guard 15, Electro Ball 18
+182 Bellossom: Fiery Dance 25, Leaf Tornado 30, Quiver Dance 58
+183 Marill: Soak 27
+184 Azumarill: Soak 29
+185 Sudowoodo: Foul Play 22
+187 Hoppip: Rage Powder 16, Acrobatics 19, Leaf Tornado 28, Cotton Guard 34
+188 Skiploom: Rage Powder 16, Acrobatics 20, Leaf Tornado 29, Cotton Guard 35
+189 Jumpluff: Rage Powder 16, Acrobatics 20, Leaf Tornado 31, Cotton Guard 39
+191 Sunkern: Leaf Tornado 26
+192 Sunflora: Leaf Tornado 26, Fiery Dance 62
+193 Yanma: Struggle Bug 22
+194 Wooper: Acid Spray 4
+195 Quagsire: Acid Spray 4
+196 Espeon: Stored Power 1, Synchronoise 50
+197 Umbreon: Night Daze 1, Stored Power 1, Snarl 24, Foul Play 40, Synchronoise 50
+198 Murkrow: Foul Play 52
+199 Slowking: Wonder Room 28, Heal Pulse 57
+200 Misdreavus: Hex 36
+201 Unown: Stored Power 1
+203 Girafarig: Foul Play 1
+204 Pineco: Struggle Bug 6, Autotomize 15
+205 Forretress: Heavy Slam 1, Struggle Bug 6, Autotomize 15
+206 Dunsparce: Stored Power 1, Hex 22, Coil 40
+207 Gligar: Acrobatics 40
+208 Steelix: Coil 28, Autotomize 44, Wide Guard 60, Heavy Slam 64
+211 Qwilfish: Acid Spray 7
+212 Scizor: Quick Guard 25
+213 Shuckle: Shell Smash 58, Final Gambit 62
+214 Heracross: Chip Away 31
+216 Teddiursa: Chip Away 30
+217 Ursaring: Chip Away 30
+218 Slugma: After You 7, Flame Burst 20, Clear Smog 29, Inferno 52, Shell Smash 64
+219 Magcargo: After You 7, Flame Burst 20, Clear Smog 29, Inferno 54, Shell Smash 66
+223 Remoraid: Acid Spray 6, Soak 25
+224 Octillery: Entrainment 1, Acid Spray 6, Soak 25
+226 Mantine: Wide Guard 27
+227 Skarmory: Autotomize 19
+228 Houndour: Snarl 22, Flame Burst 31, Foul Play 50, Inferno 54
+229 Houndoom: Snarl 22, Flame Burst 33, Foul Play 53, Inferno 57
+230 Kingdra: Clear Smog 37
+231 Phanpy: Steamroller 31
+232 Donphan: Steamroller 32, Heavy Slam 67
+233 Porygon2: Wonder Room 22, Foul Play 56
+237 Hitmontop: Wide Guard 56
+238 Smoochum: Heart Stamp 10
+239 Elekid: Electro Ball 18, Dual Chop 27
+240 Magby: Clear Smog 5, Flame Burst 18
+241 Miltank: Heart Stamp 37, Heavy Slam 52
+242 Blissey: Bestow 27, Heal Pulse 33
+246 Larvitar: Chip Away 28
+247 Pupitar: Chip Away 28
+248 Tyranitar: Heavy Slam 1, Chip Away 28
+252 Treecko: Dragon Tail 28
+253 Grovyle: Dragon Tail 28, Quick Guard 52
+254 Sceptile: Dragon Tail 28, Quick Guard 54
+255 Torchic: Flame Charge 13, Incinerate 22, Heat Crash 31, Work Up 46
+256 Combusken: Flame Charge 13, Heat Crash 31
+257 Blaziken: Flame Charge 13, Heat Crash 31
+259 Marshtomp: Wide Guard 58
+260 Swampert: Wide Guard 58
+261 Poochyena: Foul Play 49
+262 Mightyena: Foul Play 57
+263 Zigzagoon: After You 21, Simple Beam 27, Tail Slap 33
+264 Linoone: Quick Guard 20, After You 22, Simple Beam 28, Tail Slap 36
+265 Wurmple: Struggle Bug 1, Electroweb 5
+267 Beautifly: Rage Powder 49, Quiver Dance 61
+269 Dustox: Quiver Dance 61
+273 Seedot: Foul Play 46
+274 Nuzleaf: Leaf Tornado 35, Foul Play 46
+275 Shiftry: Leaf Tornado 40
+276 Taillow: After You 7, Quick Guard 22
+277 Swellow: After You 7, Quick Guard 22
+278 Wingull: Soak 34
+279 Pelipper: Wide Guard 1, Soak 36
+280 Ralts: Telekinesis 1, Ally Switch 28, Stored Power 50
+281 Kirlia: Telekinesis 1, Heal Pulse 20, Ally Switch 29, Stored Power 51
+282 Gardevoir: Heal Pulse 20, Ally Switch 29, Synchronoise 30, Stored Power 55
+283 Surskit: Struggle Bug 12, Soak 36, Power Split 40
+284 Masquerain: Struggle Bug 12, Soak 36, Power Split 40, Quiver Dance 64
+287 Slakoth: After You 7, Chip Away 31
+288 Vigoroth: After You 7, Chip Away 35
+289 Slaking: After You 7, Chip Away 35
+290 Nincada: Struggle Bug 20, Hone Claws 29, Final Gambit 48
+291 Ninjask: Struggle Bug 20, Hone Claws 40, Final Gambit 64
+292 Shedinja: Struggle Bug 20, Hone Claws 40, Ally Switch 56
+293 Whismur: Echoed Voice 10, Synchronoise 48
+294 Loudred: Echoed Voice 10, Circle Throw 32, Synchronoise 49
+295 Exploud: Echoed Voice 10, Circle Throw 32, Synchronoise 54
+296 Makuhita: Wide Guard 36, Heavy Slam 50
+297 Hariyama: Wide Guard 41, Heavy Slam 59
+298 Azurill: Soak 16
+299 Nosepass: Wide Guard 50
+300 Skitty: Simple Beam 27
+301 Delcatty: Simple Beam 45
+302 Sableye: Foul Play 58
+303 Mawile: Foul Play 58
+304 Aron: Autotomize 25, Heavy Slam 55
+305 Lairon: Autotomize 27, Heavy Slam 58
+306 Aggron: Autotomize 27, Heavy Slam 60
+307 Meditite: Ally Switch 1
+308 Medicham: Ally Switch 1
+309 Electrike: Electro Ball 25, Flame Burst 28
+310 Manectric: Electro Ball 25, Flame Burst 29
+311 Plusle: Bestow 10, Electro Ball 36, Entrainment 45
+312 Minun: Bestow 10, Electro Ball 36, Entrainment 45
+313 Volbeat: Struggle Bug 24, Quiver Dance 57
+314 Illumise: Struggle Bug 15, Quiver Dance 57
+315 Roselia: Venoshock 21, Leaf Tornado 27
+316 Gulpin: Acid Spray 22
+317 Swalot: Acid Spray 22
+320 Wailmer: Heavy Slam 32, Final Gambit 40, Soak 52
+321 Wailord: Heavy Slam 32, Final Gambit 40, Wide Guard 40, Soak 50
+322 Numel: Flame Burst 22, Heavy Slam 37
+323 Camerupt: Flame Burst 22, Heavy Slam 39
+324 Torkoal: Clear Smog 25, Inferno 53, Shell Smash 57
+325 Spoink: Simple Beam 37
+326 Grumpig: Simple Beam 40, Psystrike 64
+329 Vibrava: Struggle Bug 31
+330 Flygon: Struggle Bug 31, Quiver Dance 71
+331 Cacnea: Foul Play 53
+332 Cacturne: Foul Play 54
+333 Swablu: Cotton Guard 37
+334 Altaria: Cotton Guard 41
+335 Zangoose: Quick Guard 30, Final Gambit 66
+336 Seviper: Coil 46, Final Gambit 66
+337 Lunatone: Wonder Room 10, Ally Switch 46, Stored Power 54, Night Daze 62
+338 Solrock: Magic Room 10, Ally Switch 46, Stored Power 54
+341 Corphish: Razor Shell 20, Chip Away 26
+342 Crawdaunt: Razor Shell 20, Chip Away 26
+350 Milotic: Dragon Tail 24, Coil 59
+351 Castform: Clear Smog 1, Hex 1, Reflect Type 1
+352 Kecleon: Foul Play 60
+353 Shuppet: Hex 28
+354 Banette: Hex 28
+355 Duskull: Hex 43
+356 Dusclops: Hex 45
+357 Tropius: Leaf Tornado 26
+358 Chimecho: Stored Power 18, Entrainment 25, Heal Pulse 44, Synchronoise 48
+359 Absol: Foul Play 48
+361 Snorunt: Frost Breath 33, Hex 40
+362 Glalie: Hex 40
+366 Clamperl: Shell Smash 50
+367 Huntail: Coil 32, Shell Smash 52
+368 Gorebyss: Coil 32, Shell Smash 52
+370 Luvdisc: Heart Stamp 28
+376 Metagross: Heavy Slam 53, Shift Gear 73
+380 Latias: Stored Power 1, Simple Beam 1
+381 Latios: Stored Power 1, Simple Beam 1
+383 Groudon: Inferno 30
+384 Rayquaza: V-create 1
+385 Jirachi: Heart Stamp 1
+387 Turtwig: Wide Guard 31, Heavy Slam 43
+388 Grotle: Wide Guard 31, Heavy Slam 43
+389 Torterra: Wide Guard 31, Heavy Slam 43, Shell Smash 70
+390 Chimchar: Quick Guard 43, Inferno 49
+391 Monferno: Quick Guard 43, Inferno 49
+392 Infernape: Quick Guard 43, Inferno 50
+396 Starly: Retaliate 26
+397 Staravia: Retaliate 26
+398 Staraptor: Retaliate 26, Final Gambit 34
+401 Kricketot: Struggle Bug 3
+402 Kricketune: Struggle Bug 3
+405 Luxray: Foul Play 65
+408 Cranidos: Chip Away 24, Head Charge 39
+409 Rampardos: Chip Away 24, Head Charge 43
+410 Shieldon: Heavy Slam 39, Wide Guard 42
+411 Bastiodon: Guard Split 31, Heavy Slam 39, Wide Guard 43
+412 Burmy: Electroweb 1, Struggle Bug 1
+413 Wormadam: Electroweb 1, Struggle Bug 1, Leaf Tornado 25, Rage Powder 29, Quiver Dance 56
+414 Mothim: Electroweb 1, Struggle Bug 1, Quiver Dance 56
+415 Combee: Struggle Bug 1
+417 Pachirisu: Electro Ball 25
+418 Buizel: Soak 18, Tail Slap 40
+419 Floatzel: Soak 18, Tail Slap 43
+420 Cherubi: Leaf Tornado 30, Heal Pulse 42
+421 Cherrim: Leaf Tornado 31, Heal Pulse 43
+422 Shellos: Clear Smog 26
+423 Gastrodon: Clear Smog 26
+424 Ambipom: Tail Slap 54
+425 Drifloon: Hex 25
+426 Drifblim: Hex 25
+427 Buneary: After You 28, Circle Throw 37
+428 Lopunny: After You 28, Circle Throw 37
+431 Glameow: Foul Play 44
+432 Purugly: Foul Play 45
+433 Chingling: Telekinesis 1, Stored Power 18
+434 Stunky: Acid Spray 10, Flame Burst 19, Foul Play 46
+435 Skuntank: Acid Spray 10, Flame Burst 19, Snarl 26, Foul Play 49
+436 Bronzor: Hex 34
+437 Bronzong: Ally Switch 1, Hex 37, Heavy Slam 61
+438 Bonsly: Foul Play 22
+439 Mime Jr.: Heal Pulse 28, Quick Guard 46, Wide Guard 46
+441 Chatot: Synchronoise 19
+442 Spiritomb: Hex 28, Ally Switch 31, Foul Play 62
+443 Gible: Dual Chop 31
+444 Gabite: Dual Chop 34
+445 Garchomp: Dual Chop 34
+446 Munchlax: Chip Away 18, Heavy Slam 54
+447 Riolu: Final Gambit 42
+448 Lucario: Final Gambit 1, Dual Chop 29, Heal Pulse 54
+452 Drapion: Storm Throw 43, Foul Play 59
+455 Carnivine: Leaf Tornado 45
+456 Finneon: Soak 50
+457 Lumineon: Soak 55, Quiver Dance 59
+460 Abomasnow: Wide Guard 1
+462 Magnezone: Electro Ball 25
+463 Lickilicky: Chip Away 31
+464 Rhyperior: Heat Crash 1, Chip Away 22, Heavy Slam 59
+465 Tangrowth: Leaf Tornado 16, Rage Powder 40
+466 Electivire: Electro Ball 18, Dual Chop 27
+467 Magmortar: Clear Smog 5, Flame Burst 18
+469 Yanmega: Struggle Bug 22
+470 Leafeon: Stored Power 1, Synchronoise 50
+471 Glaceon: Stored Power 1, Synchronoise 50, Glaciate 60
+472 Gliscor: Acrobatics 40
+474 Porygon-Z: Wonder Room 22, Foul Play 56
+475 Gallade: Heal Pulse 20, Ally Switch 29, Sacred Sword 38, Quick Guard 55, Wide Guard 55
+476 Probopass: Wide Guard 50
+477 Dusknoir: Hex 45
+478 Froslass: Hex 40
+479 Rotom: Electro Ball 31, Hex 34, Stored Power 60
+486 Regigigas: Heavy Slam 1
+487 Giratina: Hex 30
+499 Wormadam-Sandy: Electroweb 1, Struggle Bug 1, Quiver Dance 56
+500 Wormadam-Trash: Electroweb 1, Struggle Bug 1, Ally Switch 29, Quiver Dance 56
+501 Giratina-Origin: Hex 30
+503 Rotom-Heat: Electro Ball 31, Hex 34, Stored Power 60
+504 Rotom-Wash: Electro Ball 31, Hex 34, Stored Power 60
+505 Rotom-Frost: Electro Ball 31, Hex 34, Stored Power 60
+506 Rotom-Fan: Electro Ball 31, Hex 34, Stored Power 60
+507 Rotom-Mow: Electro Ball 31, Hex 34, Stored Power 60
+
+FULL INSTALLED ALTERNATE-FORM LEVEL-UP LISTS
+The existing workbook has separate columns for Wormadam forms. All12 imported alternate-form lists are included here; ordinary493 species are in the workbook.
+496 Deoxys-Attack: 1: Meteor Mash, 1: Dark Pulse, 1: Leer, 1: Wrap, 6: Night Shade, 10: Teleport, 14: Taunt, 18: Pursuit, 22: Psychic, 26: Superpower, 30: Psycho Shift, 34: Zen Headbutt, 38: Cosmic Power, 42: Zap Cannon, 46: Psycho Boost, 50: Hyper Beam
+497 Deoxys-Defense: 1: Meteor Mash, 1: Dark Pulse, 1: Leer, 1: Wrap, 6: Night Shade, 10: Teleport, 14: Knock Off, 18: Spikes, 22: Psychic, 26: Snatch, 30: Psycho Shift, 34: Zen Headbutt, 38: Iron Defense, 38: Amnesia, 42: Recover, 46: Psycho Boost, 50: Counter, 50: Mirror Coat
+498 Deoxys-Speed: 1: Meteor Mash, 1: Dark Pulse, 1: Leer, 1: Wrap, 6: Night Shade, 10: Double Team, 14: Knock Off, 18: Pursuit, 22: Psychic, 26: Swift, 30: Psycho Shift, 34: Zen Headbutt, 38: Agility, 42: Recover, 46: Psycho Boost, 50: ExtremeSpeed
+499 Wormadam-Sandy: 1: Rapid Spin, 1: Tackle, 1: Hidden Power, 1: String Shot, 1: Protect, 1: Bug Bite, 1: Electroweb, 1: Struggle Bug, 25: Mud Bomb, 27: Sucker Punch, 29: Rock Blast, 32: Spikes, 35: Growth, 38: Bulldoze, 41: Bug Buzz, 44: Zen Headbutt, 48: Captivate, 52: Endeavor, 56: Quiver Dance, 60: Earthquake
+500 Wormadam-Trash: 1: Rapid Spin, 1: Tackle, 1: Hidden Power, 1: String Shot, 1: Protect, 1: Bug Bite, 1: Electroweb, 1: Struggle Bug, 25: Mirror Shot, 27: Sucker Punch, 29: Ally Switch, 32: Stealth Rock, 35: Growth, 38: Iron Head, 41: Bug Buzz, 44: Psychic, 48: Captivate, 52: Endeavor, 56: Quiver Dance, 60: Metal Burst
+501 Giratina-Origin: 1: Scary Face, 6: Ominous Wind, 10: AncientPower, 14: Slash, 18: Shadow Sneak, 22: Destiny Bond, 26: Dragon Claw, 30: Hex, 34: Shadow Claw, 38: Aura Sphere, 42: Earth Power, 46: Dragon Pulse, 50: Shadow Force
+502 Shaymin-Sky: 1: Healing Wish, 1: Growth, 6: Magical Leaf, 10: Leech Seed, 14: Quick Attack, 18: Zen Headbutt, 22: Natural Gift, 26: Recover, 30: Aromatherapy, 34: Sleep Powder, 38: Air Slash, 42: Draining Kiss, 46: Leaf Storm, 50: Seed Flare
+503 Rotom-Heat: 1: Trick, 1: Nasty Plot, 1: Astonish, 1: Thunder Wave, 4: ThunderShock, 7: Confuse Ray, 10: Shock Wave, 13: Double Team, 16: Ominous Wind, 19: Uproar, 22: Substitute, 25: Charge Beam, 28: Will-O-Wisp, 31: Electro Ball, 34: Hex, 37: Charge, 40: Discharge, 43: Dark Pulse, 46: Pain Split, 50: Shadow Ball, 55: Thunderbolt, 60: Stored Power
+504 Rotom-Wash: 1: Trick, 1: Nasty Plot, 1: Astonish, 1: Thunder Wave, 4: ThunderShock, 7: Confuse Ray, 10: Shock Wave, 13: Double Team, 16: Ominous Wind, 19: Uproar, 22: Substitute, 25: Charge Beam, 28: Will-O-Wisp, 31: Electro Ball, 34: Hex, 37: Charge, 40: Discharge, 43: Dark Pulse, 46: Pain Split, 50: Shadow Ball, 55: Thunderbolt, 60: Stored Power
+505 Rotom-Frost: 1: Trick, 1: Nasty Plot, 1: Astonish, 1: Thunder Wave, 4: ThunderShock, 7: Confuse Ray, 10: Shock Wave, 13: Double Team, 16: Ominous Wind, 19: Uproar, 22: Substitute, 25: Charge Beam, 28: Will-O-Wisp, 31: Electro Ball, 34: Hex, 37: Charge, 40: Discharge, 43: Dark Pulse, 46: Pain Split, 50: Shadow Ball, 55: Thunderbolt, 60: Stored Power
+506 Rotom-Fan: 1: Trick, 1: Nasty Plot, 1: Astonish, 1: Thunder Wave, 4: ThunderShock, 7: Confuse Ray, 10: Shock Wave, 13: Double Team, 16: Ominous Wind, 19: Uproar, 22: Substitute, 25: Charge Beam, 28: Will-O-Wisp, 31: Electro Ball, 34: Hex, 37: Charge, 40: Discharge, 43: Dark Pulse, 46: Pain Split, 50: Shadow Ball, 55: Thunderbolt, 60: Stored Power
+507 Rotom-Mow: 1: Trick, 1: Nasty Plot, 1: Astonish, 1: Thunder Wave, 4: ThunderShock, 7: Confuse Ray, 10: Shock Wave, 13: Double Team, 16: Ominous Wind, 19: Uproar, 22: Substitute, 25: Charge Beam, 28: Will-O-Wisp, 31: Electro Ball, 34: Hex, 37: Charge, 40: Discharge, 43: Dark Pulse, 46: Pain Split, 50: Shadow Ball, 55: Thunderbolt, 60: Stored Power

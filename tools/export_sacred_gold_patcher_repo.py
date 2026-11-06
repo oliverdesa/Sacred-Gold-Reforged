@@ -4,7 +4,7 @@ from pathlib import Path
 import shutil
 import tempfile
 import zipfile
-from package_sacred_gold_web import SITE_MEDIA
+from package_sacred_gold_web import SITE_DOCS, SITE_MEDIA
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = [
@@ -39,7 +39,7 @@ def export(out):
     out = out.resolve()
     if out.exists() or out.with_suffix('.zip').exists():
         raise FileExistsError('Choose a new source export directory.')
-    files = list(FILES)
+    files = [*FILES, *(f'patcher/web/{path.as_posix()}' for path in SITE_DOCS)]
     for path in (ROOT / 'patcher/web').rglob('*'):
         if path.is_file() and (path.suffix in ('.js', '.css', '.html', '.md', '.json', '.txt') or
                              path.name in SITE_MEDIA):
